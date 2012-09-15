@@ -26,3 +26,6 @@ basta@mozilla.com
         supported by spotify. 
 *** Lookup songs using spotify web api
     simple.
+
+user: wellecks@gmail.com
+pw: p3nnapps
