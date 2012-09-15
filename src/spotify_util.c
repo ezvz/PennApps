@@ -52,8 +52,12 @@ sp_session *g_session;
   G_MUTEX_SYNCHRONIZE(code; pthread_cond_signal(&g_cond));\
 } while(0)
 
-static void pf_logged_in(sp_session *session, sp_error error) {
 
+
+static void pf_logged_in(sp_session *session, sp_error error) {
+    ASSERT_SP_ERROR_OK(error);
+    MESSAGE("Logged in!");
+    G_SIGNAL(/*nothing*/);
 }
 
 static void pf_notify_main_thread(sp_session *session) {
@@ -91,11 +95,12 @@ int pf_spotify_init(const char *username, const char* password) {
     ASSERT_SP_ERROR_OK(error);
     MESSAGE("Created session successfully.");
 
+    G_WAIT(
     MESSAGE("Logging in...");
     error = sp_session_login(session, username, password, 0, NULL);
     MESSAGE("(waiting...)");
+           );
 
-    ASSERT_SP_ERROR_OK(error);
     INFO("Logged in: %s", (
                            sp_session_connectionstate(session) == SP_CONNECTION_STATE_LOGGED_IN ? "yes" : "no"
                            ));
