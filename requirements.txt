@@ -4,3 +4,4 @@ Werkzeug==0.8.3
 distribute==0.6.27
 wsgiref==0.1.2
 Flask-MongoAlchemy
+MongoAlchemy
