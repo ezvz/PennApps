@@ -1,0 +1,9 @@
+
+
+* 
+Should call 
+
+javascript:$('.thumb_up_list .show_more').trigger('click')
+
+as a link (href="") to get the show more button to expand. 
+
