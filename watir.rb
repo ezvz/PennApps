@@ -6,7 +6,8 @@ require 'headless'
 headless = Headless.new
 headless.start
 
-browser = Watir::Browser.start "http://www.pandora.com/account/sign-in"
+browser = Watir::Browser.new(:chrome)
+browser.goto("http://www.pandora.com/account/sign-in")
 
 #form["login_username"] = "pennapps@team.com"
 #form["login_password"] = "password"
