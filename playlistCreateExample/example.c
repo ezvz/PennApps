@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "../libspotify-Linux/include/libspotify/api.h"
+#include <libspotify/api.h>
 
 #include "../appkey.c"
 #include "login.c"
