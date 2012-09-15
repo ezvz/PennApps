@@ -7,3 +7,25 @@ javascript:$('.thumb_up_list .show_more').trigger('click')
 
 as a link (href="") to get the show more button to expand. 
 
+* 
+subprocess
+fire up node and use phantom.js zombie.js 
+
+*
+Matt 
+basta@mozilla.com
+
+* Roles
+** Matt
+*** Create mongodb
+    Saves a user's playlist info and songs in each playlist
+    Each song should have a flag that takes 3 values: 
+      - Synced: The song has been synced into the playlist
+      - Not-synced: The song hasn't been synced yet
+      - Unavailable: The song cannot be added because it is not
+        supported by spotify. 
+*** Lookup songs using spotify web api
+    simple.
+
+user: wellecks@gmail.com
+pw: p3nnapps
