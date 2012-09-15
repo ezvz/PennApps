@@ -74,6 +74,7 @@ static sp_session_callbacks callbacks = {
  * @return 0 on success, error otherwise
  */
 int pf_spotify_init(const char *username, const char* password) {
+    INFO("Init with uname %s and password %s", username, password);
     sp_session *session;
     sp_session_config config;
     sp_error error;
@@ -89,12 +90,10 @@ int pf_spotify_init(const char *username, const char* password) {
     error = sp_session_create(&config, &session);
     ASSERT_SP_ERROR_OK(error);
     MESSAGE("Created session successfully.");
-    
-    G_WAIT(
-           MESSAGE("Logging in...");
-           sp_session_login(session, username, password, 0, NULL);
-           MESSAGE("(waiting...)");
-           );
+
+    MESSAGE("Logging in...");
+    error = sp_session_login(session, username, password, 0, NULL);
+    MESSAGE("(waiting...)");
 
     ASSERT_SP_ERROR_OK(error);
     INFO("Logged in: %s", (
@@ -107,11 +106,13 @@ int pf_spotify_init(const char *username, const char* password) {
 int main(int argc, char *argv[])
 {
     MESSAGE("Running spotify_util");
-    if (argc < 2) {
+    if (argc < 3) {
         FAIL("Not enough arguments");
     }
     printf("%d\n", argc);
-    pf_spotify_init(argv[1], argv[2]);
+    if (pf_spotify_init(argv[1], argv[2]) != 0) {
+        FAIL("Failed to initialize");
+    }
     
     return 0;
 }
