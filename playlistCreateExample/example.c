@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <libspotify/api.h>
+#include "../libspotify-Linux/include/libspotify/api.h"
 
-#include "appkey.c"
+#include "../appkey.c"
 #include "login.c"
 
 #define INFO(fmt, xargs...) printf("[%s:%d] " fmt "\n", __FILE__, __LINE__, xargs)
@@ -109,7 +109,7 @@ int main(void)
   
   G_WAIT( 
     MESSAGE("Logging in…");
-    sp_session_login(session, g_username, g_password);
+    sp_session_login(session, g_username, g_password, 0, NULL);
     MESSAGE("(waiting…)");
   );
   
