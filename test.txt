@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tracks xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.spotify.com/ns/music/1">
+  <opensearch:Query role="request" startPage="1" searchTerms="Let It Be"/>
+  <opensearch:totalResults>4959</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <track href="spotify:track:2dTIQ0acrLv9cazhWyb6P5">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:3UkRtRjUOspJDyQmzRIyYk">
+      <name>#1 Beatles Now</name>
+    </artist>
+    <id type="isrc">USA561009745</id>
+    <album href="spotify:album:0BCeflkkC6czcKvv5Ixcx9">
+      <name># 1 Beatles Hits - The Best Of The Beatles</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>228.024000</length>
+    <popularity>0.62522</popularity>
+  </track>
+  <track href="spotify:track:56AecW9Anb0CY6HpgWvcg9">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:6DoH7ywD5BcQvjloe9OcIj">
+      <name>Ray LaMontagne</name>
+    </artist>
+    <id type="isrc">USRC10800268</id>
+    <album href="spotify:album:2CbLBSlkvh2vR4JRLDRQso">
+      <name>Gossip In The Grain</name>
+      <released>2008</released>
+      <availability>
+        <territories>AR AU BO BR CA CL CN CO CR EC GT HK HN ID IN KR MX MY NI NZ PA PE PH PY SG SV TH TW US UY VE</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>280.226000</length>
+    <popularity>0.61822</popularity>
+  </track>
+  <track href="spotify:track:61cNdbhJTHH2QoLQ1g96QS">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:6DoH7ywD5BcQvjloe9OcIj">
+      <name>Ray LaMontagne</name>
+    </artist>
+    <id type="isrc">USRC10800268</id>
+    <album href="spotify:album:2sOE2ErQdW8Az2I6IC6Py3">
+      <name>Gossip in The Grain</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AL AT BA BE BG BY CH CZ DE DK EE FI FO FR GB GI HR HU IE IS LI LT LU LV MC MD ME MK MT NL NO PL RO RS RU SE SI SK SM TR UA VA</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>281.013000</length>
+    <popularity>0.60559</popularity>
+  </track>
+  <track href="spotify:track:4ChBLndekjzQveHPsn3r6W">
+    <name>Let It Be (feat. Veela)</name>
+    <artist href="spotify:artist:4kjWnaLfIRcLJ1Dy4Wr6tY">
+      <name>Blackmill</name>
+    </artist>
+    <artist href="spotify:artist:3CiuuHKIxxJPoNRvF94GtR">
+      <name>Veela</name>
+    </artist>
+    <id type="isrc">TCABC1144865</id>
+    <album href="spotify:album:2ayhUoOppwZ5paYiXTRqqa">
+      <name>Miracle</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>3</track-number>
+    <length>363.433000</length>
+    <popularity>0.60355</popularity>
+  </track>
+  <track href="spotify:track:1wccuCoi6BswtAAhUAqAlh">
+    <name>Let it Be (made famous by The Beatles)</name>
+    <artist href="spotify:artist:3WrFJ7ztbogyGnTHbHJFl2">
+      <name>The Beatles</name>
+    </artist>
+    <artist href="spotify:artist:4QmRzCCIWdANj5VjuXA2sq">
+      <name>The Piano Classic Players</name>
+    </artist>
+    <id type="isrc">USA560808820</id>
+    <album href="spotify:album:4IPk7Mx48FHZkDNWLUJURt">
+      <name>The Most Relaxing Piano Classics Ever Made</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>10</track-number>
+    <length>222.547000</length>
+    <popularity>0.58862</popularity>
+  </track>
+  <track href="spotify:track:3lfeSYuNL5BQpKc3p1qasx">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:4zrB9WV6Z0iKKnGb1Pj0P2">
+      <name>AJ Rafael</name>
+    </artist>
+    <artist href="spotify:artist:66Fb5gJ9SX2WGlqDLUpjux">
+      <name>Alex Goot</name>
+    </artist>
+    <id type="isrc">GBDMT0801632</id>
+    <album href="spotify:album:5ZtTgjIFJ6wIh3orS4r5Wh">
+      <name>Let It Be</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AR AS AT AU AW AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CC CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>194.000000</length>
+    <popularity>0.46557</popularity>
+  </track>
+  <track href="spotify:track:3gqnOpefgHHJ9QERNtIblj">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:694pBF9e4kbYFXyk3AuInu">
+      <name>Dyme Def</name>
+    </artist>
+    <id type="isrc">USKVE0710014</id>
+    <album href="spotify:album:7pfrUtEik2R1cG9kP9SA4D">
+      <name>Space Music</name>
+      <released>2007</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>14</track-number>
+    <length>255.800000</length>
+    <popularity>0.50151</popularity>
+  </track>
+  <track href="spotify:track:1LBXmiZeg0hNgyL5Tfuc2I">
+    <name>Let It Be - Live</name>
+    <artist href="spotify:artist:0zRgwHorAZPeYVdTW9F5OX">
+      <name>The Beatles Revival Band</name>
+    </artist>
+    <id type="isrc">DEHI90800140</id>
+    <album href="spotify:album:0PCC918leo2wKSGfSXu1Tc">
+      <name>Live At the Alte Oper Frankfurt</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>15</track-number>
+    <length>242.228000</length>
+    <popularity>0.49048</popularity>
+  </track>
+  <track href="spotify:track:1CjAhFTyhMSJuo8ejm4rpW">
+    <name>Let It Be - The Beatles Tribute</name>
+    <artist href="spotify:artist:1QqVx3Yzofkbni4W6h0Qhv">
+      <name>Let It Be</name>
+    </artist>
+    <id type="isrc">TCABB1146148</id>
+    <album href="spotify:album:6i6N7pMAJpUEAKccxPqH2p">
+      <name>Let It Be - The Beatles Tribute - Single</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>229.439000</length>
+    <popularity>0.43062</popularity>
+  </track>
+  <track href="spotify:track:7lo1DV8sK3GxzpAJF58uNe">
+    <name>Let It Be - Long Version</name>
+    <artist href="spotify:artist:0WHU92jZQczkt5Q9xmv9oF">
+      <name>Carol Woods</name>
+    </artist>
+    <artist href="spotify:artist:7FpTEI2hQNQSYjChoR7dBo">
+      <name>Timothy T. Mitchum</name>
+    </artist>
+    <id type="isrc">USBYQ0710032</id>
+    <album href="spotify:album:2rHgctQLLQqcebs4jN82z1">
+      <name>Across The Universe</name>
+      <released>2007</released>
+      <availability>
+        <territories>CA US</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>226.587000</length>
+    <popularity>0.48775</popularity>
+  </track>
+  <track href="spotify:track:78dCHbVxaXAoAufEbprF8Q">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:6DoH7ywD5BcQvjloe9OcIj">
+      <name>Ray LaMontagne</name>
+    </artist>
+    <id type="isrc">USRC10800268</id>
+    <album href="spotify:album:6bRN1zApap1DxMkEkITpWl">
+      <name>Gossip in The Grain</name>
+      <released>2008</released>
+      <availability>
+        <territories>BE DK FI FO FR IS LU NL NO SE</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>281.013000</length>
+    <popularity>0.46207</popularity>
+  </track>
+  <track href="spotify:track:08kEFB6fhPgRyYOYhAbKTw">
+    <name>Good To Be Home</name>
+    <artist href="spotify:artist:0tp23bDcTCmG7axeHcLWyF">
+      <name>CoCo Jones</name>
+    </artist>
+    <id type="isrc">USWD11262789</id>
+    <album href="spotify:album:5Zujo4KiMKCtdIglUha0xR">
+      <name>Let It Shine</name>
+      <released>2012</released>
+      <availability>
+        <territories>US</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>205.920000</length>
+    <popularity>0.44373</popularity>
+  </track>
+  <track href="spotify:track:2F1FFLFVpaIhXpZyySfpP6">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:6pIJ3IIzBysHlsChP2VzTB">
+      <name>Perfect Dinner Music</name>
+    </artist>
+    <id type="isrc">DEMF31200730</id>
+    <album href="spotify:album:4ifI7MfKBzu016UJTokB4Y">
+      <name>The Ultimate Dinner Music Piano Collection</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>9</track-number>
+    <length>226.920000</length>
+    <popularity>0.42445</popularity>
+  </track>
+  <track href="spotify:track:13tvwyvFEuc7KkLrCIxpFB">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7M5Z4j6N9k2Jd3CukFUv5e">
+      <name>Vazquez Sounds</name>
+    </artist>
+    <id type="isrc">MXF011200202</id>
+    <album href="spotify:album:1EGYGzsnToRF5Hu2jupoTf">
+      <name>Let It Be</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>256.000000</length>
+    <popularity>0.37467</popularity>
+  </track>
+  <track href="spotify:track:5w53bTeRQ1I1xLNZ5D2zX9">
+    <name>Who I'm Gonna Be</name>
+    <artist href="spotify:artist:0tp23bDcTCmG7axeHcLWyF">
+      <name>CoCo Jones</name>
+    </artist>
+    <id type="isrc">USWD11262793</id>
+    <album href="spotify:album:5Zujo4KiMKCtdIglUha0xR">
+      <name>Let It Shine</name>
+      <released>2012</released>
+      <availability>
+        <territories>US</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>172.707000</length>
+    <popularity>0.42493</popularity>
+  </track>
+  <track href="spotify:track:68BduU1BLac2t9Z41Bgf8F">
+    <name>Let It Be - Long Version</name>
+    <artist href="spotify:artist:0WHU92jZQczkt5Q9xmv9oF">
+      <name>Carol Woods</name>
+    </artist>
+    <artist href="spotify:artist:7FpTEI2hQNQSYjChoR7dBo">
+      <name>Timothy T. Mitchum</name>
+    </artist>
+    <id type="isrc">USBYQ0710032</id>
+    <album href="spotify:album:18nf6cYVWv09j9DEUKv7qO">
+      <name>Across The Universe</name>
+      <released>2007</released>
+      <availability>
+        <territories>AT AU BE CH CN CZ DE DK EE ES FI GB HK HR IE IL IN IT LT LV MY NL NO NZ PL PT RU SE SG SK TH TR TW UA ZA</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>226.586000</length>
+    <popularity>0.44051</popularity>
+  </track>
+  <track href="spotify:track:4QuYdbaC0j3lzmt5hLgMjj">
+    <name>Unsatisfied</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761007</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>7</track-number>
+    <length>241.773000</length>
+    <popularity>0.42401</popularity>
+  </track>
+  <track href="spotify:track:5HKcfvhCdIoZKzeQw2HgEe">
+    <name>Let It Will Be</name>
+    <artist href="spotify:artist:6tbjWDEIzxoDsBA1FuhfPW">
+      <name>Madonna</name>
+    </artist>
+    <id type="isrc">USWB10504977</id>
+    <album href="spotify:album:1hg0pQJLE9dzfT1kgZtDPr">
+      <name>Confessions On A Dance Floor</name>
+      <released>2005</released>
+      <availability>
+        <territories>AD AI AL AM AT AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>260.946000</length>
+    <popularity>0.40621</popularity>
+  </track>
+  <track href="spotify:track:4vR5lZ3646HsLoKSjJOogR">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:1ThoqLcyIYvZn7iWbj8fsj">
+      <name>Bill Withers</name>
+    </artist>
+    <id type="isrc">USSM10503917</id>
+    <album href="spotify:album:2cKG9ycT87RUYUZfuAbThV">
+      <name>Lean On Me: The Collection</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>154.480000</length>
+    <popularity>0.38666</popularity>
+  </track>
+  <track href="spotify:track:7ECJ3YRXsGLpAuSluOiIa7">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7nwUJBm0HE4ZxD3f5cy5ok">
+      <name>Aretha Franklin</name>
+    </artist>
+    <id type="isrc">USAT20102255</id>
+    <album href="spotify:album:4ZAB8N938UxXCf87KItqW1">
+      <name>GLASS ONION: SONGS OF THE BEATLES</name>
+      <released>2003</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>19</track-number>
+    <length>210.133000</length>
+    <popularity>0.38396</popularity>
+  </track>
+  <track href="spotify:track:5opwUOMFOIG9bcfVZgeZUM">
+    <name>One, Let It Be - Medley</name>
+    <artist href="spotify:artist:7CQwac16i1W5ej8YpuL3dv">
+      <name>Boyce Avenue</name>
+    </artist>
+    <id type="isrc">US-TCC-10-47052</id>
+    <album href="spotify:album:28pcJhBk4HzddZrnv2wUgK">
+      <name>Acoustic Sessions: Vol. 2</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>12</track-number>
+    <length>216.980000</length>
+    <popularity>0.41191</popularity>
+  </track>
+  <track href="spotify:track:2Xk8vlLSKO5xeer7zysGpF">
+    <name>One / Let It Be</name>
+    <artist href="spotify:artist:7CQwac16i1W5ej8YpuL3dv">
+      <name>Boyce Avenue</name>
+    </artist>
+    <id type="isrc">US-TCF-10-18160</id>
+    <album href="spotify:album:4KZpiIX6VZgrhhCCUA3dMI">
+      <name>Acoustic Sessions, Vol. 3</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>4</track-number>
+    <length>216.980000</length>
+    <popularity>0.40802</popularity>
+  </track>
+  <track href="spotify:track:1MV5BzujqyRQ417qj0rXNS">
+    <name>I Will Dare</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761001</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>197.426000</length>
+    <popularity>0.39920</popularity>
+  </track>
+  <track href="spotify:track:3BZ3bPBuhw3xl6aDOWSjog">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:4iQxjDsgofhdoiXoCfAWZn">
+      <name>Rod Stewart with Jennifer Hudson</name>
+    </artist>
+    <id type="isrc">USJAY0900237</id>
+    <album href="spotify:album:1vYtAXJDt3FdgiaNCAW4c7">
+      <name>Soulbook</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>196.800000</length>
+    <popularity>0.38122</popularity>
+  </track>
+  <track href="spotify:track:3OitWDgR4SzAUOm3TBmvhw">
+    <name>Don't Let Me Be The Last To Know</name>
+    <artist href="spotify:artist:26dSoYclwsYLMAKD3tpOr4">
+      <name>Britney Spears</name>
+    </artist>
+    <id type="isrc">USJI10000146</id>
+    <album href="spotify:album:5PmgtkodFl2Om3hMXONDll">
+      <name>Oops!... I Did It Again</name>
+      <released>2000</released>
+      <availability>
+        <territories>AR AT BE BG BO BR BW CA CH CL CN CO CR CY CZ DE DK DZ EC EE ES FI FR GR GT HK HN HU ID IN IT KR KZ LB LT LU LV MA MT MX MY NA NG NI NL NO PA PE PH PL PT PY RO RU SE SG SI SK SV TH TN TR TW US UY VE ZA</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>230.933000</length>
+    <popularity>0.40558</popularity>
+  </track>
+  <track href="spotify:track:2YUEkxc7BZkYmmP1YaPfIY">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:4STHEaNw4mPZ2tzheohgXB">
+      <name>Paul McCartney</name>
+    </artist>
+    <id type="isrc">US4R31007095</id>
+    <album href="spotify:album:2sAi18H02E2caLmLs5Ko6u">
+      <name>Aid Still Required</name>
+      <released>2010</released>
+      <availability>
+        <territories>CA US</territories>
+      </availability>
+    </album>
+    <track-number>3</track-number>
+    <length>243.513000</length>
+    <popularity>0.36282</popularity>
+  </track>
+  <track href="spotify:track:3YPpiU7RGEsokqwrK3unSJ">
+    <name>Let It Be Sung</name>
+    <artist href="spotify:artist:0EghvcisxKybq4CVO7rB5t">
+      <name>Matt Costa</name>
+    </artist>
+    <artist href="spotify:artist:3GBPw9NK25X1Wt2OUvOwY3">
+      <name>Jack Johnson</name>
+    </artist>
+    <artist href="spotify:artist:2ebfVsLY0Qeekr3PBpx7uH">
+      <name>Dan Lebowitz</name>
+    </artist>
+    <artist href="spotify:artist:4LxHuTFBBOw0VjWD92Tv55">
+      <name>Steve Adams</name>
+    </artist>
+    <artist href="spotify:artist:5HMFK1o5Bl9qY10PgavMhT">
+      <name>Zach Gill</name>
+    </artist>
+    <id type="isrc">USUM70612641</id>
+    <album href="spotify:album:1nnRuunmUVhY92T65Lxkzs">
+      <name>A Broke Down Melody</name>
+      <released>2006</released>
+      <availability>
+        <territories>CA US</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>248.347000</length>
+    <popularity>0.37528</popularity>
+  </track>
+  <track href="spotify:track:3MvmkgmpYKYNfEDn3HnLED">
+    <name>Let It Be - Originally Performed By the Beatles</name>
+    <artist href="spotify:artist:419jnuNhkJJvPAUANh7YAo">
+      <name>The Ultimate Beatles Cover Band</name>
+    </artist>
+    <id type="isrc">USKWU1000363</id>
+    <album href="spotify:album:4KkGnemzsIC3wrrcHe1K91">
+      <name>Beatles Gold</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>17</track-number>
+    <length>250.240000</length>
+    <popularity>0.39876</popularity>
+  </track>
+  <track href="spotify:track:1svFiD0tXVEjfLmnZ7jqz5">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7EK1bQADBoqbYXnT4Cqv9w">
+      <name>John Denver</name>
+    </artist>
+    <id type="isrc">USRC17104019</id>
+    <album href="spotify:album:6TsCA7O6oVl5aYnwMZG56r">
+      <name>Poems, Prayers and Promises</name>
+      <released>1988</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NC NE NI NL NO NP NR NU OM PA PE PF PG PH PK PM PN PR PS PT PW PY QA RE RO RS RW SA SB SC SD SE SG SH SI SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TT TV TW TZ UA UG UY UZ VA VC VE VG VN VU WF WS YE YT ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>217.066000</length>
+    <popularity>0.35599</popularity>
+  </track>
+  <track href="spotify:track:6Vr2fY3Z9pIkI6zCTFd6Gb">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:42Lgl2myla33QoKueaTxmA">
+      <name>Feestteam</name>
+    </artist>
+    <id type="isrc">NL-E87-12-25002</id>
+    <album href="spotify:album:0CPPre7TNiopU1OQPpJHCe">
+      <name>Apres Ski Hits 2012</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>195.000000</length>
+    <popularity>0.34961</popularity>
+  </track>
+  <track href="spotify:track:56QENuNHxBZPJdGEdMhMep">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:16nn7kCHPWIB6uK09GQCNI">
+      <name>Social Distortion</name>
+    </artist>
+    <id type="isrc">USSM10022477</id>
+    <album href="spotify:album:0fBzuS7bjmFQZ6yIQjiyxV">
+      <name>Original Album Classics</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>255.266000</length>
+    <popularity>0.36144</popularity>
+  </track>
+  <track href="spotify:track:2Lj2a9PrYznykvZeygYGKH">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:5DhdFUvQCHgY2F9mVL8uoz">
+      <name>London Community Gospel Choir</name>
+    </artist>
+    <id type="isrc">GB9CC1000005</id>
+    <album href="spotify:album:3J0DCCNePaDM3TZvY3lUAs">
+      <name>London Community Gospel Choir</name>
+      <released>2010</released>
+      <availability>
+        <territories>AT AU BE CH CZ DE DK EE FI FR GB HU IE IL IN LV MY NL NO NZ PL RU SE SK TR UA ZA</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>181.986000</length>
+    <popularity>0.34658</popularity>
+  </track>
+  <track href="spotify:track:77EwrXeCpbMMlWHqhdeFxJ">
+    <name>I Will Dare</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761001</id>
+    <album href="spotify:album:2sOLW5TSgXiLZBacdHxO6m">
+      <name>Let It Be</name>
+      <released>1984</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>197.426000</length>
+    <popularity>0.35923</popularity>
+  </track>
+  <track href="spotify:track:3X0gFJu8KPKZUQlnu3ginA">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:0WHU92jZQczkt5Q9xmv9oF">
+      <name>Carol Woods</name>
+    </artist>
+    <artist href="spotify:artist:7FpTEI2hQNQSYjChoR7dBo">
+      <name>Timothy T. Mitchum</name>
+    </artist>
+    <id type="isrc">USBYQ0710008</id>
+    <album href="spotify:album:4PbvuHe58nrbPLRHnq8n6K">
+      <name>Across The Universe</name>
+      <released>2007</released>
+      <availability>
+        <territories>AT AU BE CH CZ DE DK EE ES FI FR GB HK HR HU IE IN IT LT LV MY NL NO NZ PL PT RU SE SG SK TH TR TW UA ZA</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>151.173000</length>
+    <popularity>0.34521</popularity>
+  </track>
+  <track href="spotify:track:1m4bvi0s3FYRUF9dE8wLa0">
+    <name>Let It Be Known</name>
+    <artist href="spotify:artist:2RhgnQNC74QoBlaUvT4MEe">
+      <name>The Growlers</name>
+    </artist>
+    <id type="isrc">USER80303207</id>
+    <album href="spotify:album:6isQHtHCXVRDBBSnsEXx2q">
+      <name>Hot Tropics</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>7</track-number>
+    <length>198.600000</length>
+    <popularity>0.35787</popularity>
+  </track>
+  <track href="spotify:track:4vjNQBEWmeHP1M2fcWhSfA">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:1ThoqLcyIYvZn7iWbj8fsj">
+      <name>Bill Withers</name>
+    </artist>
+    <id type="isrc">USSM10503917</id>
+    <album href="spotify:album:6N8uPmDqbgXD3ztkCCfxoo">
+      <name>Just As I Am</name>
+      <released>2005</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>156.773000</length>
+    <popularity>0.34315</popularity>
+  </track>
+  <track href="spotify:track:3UpWAHui6MTeUBIL799Wt3">
+    <name>Let It Be feat. Paul McCartney - Live At Shea, 2008</name>
+    <artist href="spotify:artist:6zFYqv1mOsgBRQbae3JJ9e">
+      <name>Billy Joel</name>
+    </artist>
+    <id type="isrc">USSM11100599</id>
+    <album href="spotify:album:4zziqp3wOBkfWmxwlILVBZ">
+      <name>Live At Shea Stadium</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>311.560000</length>
+    <popularity>0.39204</popularity>
+  </track>
+  <track href="spotify:track:28g900Fe20dzA7cLOFUtKB">
+    <name>Don't Wanna Be That Guy</name>
+    <artist href="spotify:artist:25qhKKJ17Ury0KqRKJXj4d">
+      <name>Bill Burr</name>
+    </artist>
+    <id type="isrc">USIM51050192</id>
+    <album href="spotify:album:6QosNfTrElvYsNd7Gt3Y5O">
+      <name>Let It Go</name>
+      <released>2010</released>
+      <availability>
+        <territories>CA US</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>247.493000</length>
+    <popularity>0.36070</popularity>
+  </track>
+  <track href="spotify:track:3fnL2JDgy4QD04araOl0eY">
+    <name>Androgynous</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761005</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>190.853000</length>
+    <popularity>0.37135</popularity>
+  </track>
+  <track href="spotify:track:6SpBqPizA1fqLm7MgxLu6D">
+    <name>Let It Be Sung - Radio Edit</name>
+    <artist href="spotify:artist:0EghvcisxKybq4CVO7rB5t">
+      <name>Matt Costa</name>
+    </artist>
+    <artist href="spotify:artist:3GBPw9NK25X1Wt2OUvOwY3">
+      <name>Jack Johnson</name>
+    </artist>
+    <artist href="spotify:artist:2ebfVsLY0Qeekr3PBpx7uH">
+      <name>Dan Lebowitz</name>
+    </artist>
+    <artist href="spotify:artist:4LxHuTFBBOw0VjWD92Tv55">
+      <name>Steve Adams</name>
+    </artist>
+    <artist href="spotify:artist:5HMFK1o5Bl9qY10PgavMhT">
+      <name>Zach Gill</name>
+    </artist>
+    <id type="isrc">USUM70614470</id>
+    <album href="spotify:album:3Mv2xv8Fsr5ZJc7ge7bR93">
+      <name>Let It Be Sung</name>
+      <released>2006</released>
+      <availability>
+        <territories>AT AU BE CH CN CZ DE DK EE ES FI FR GB HK HR HU IE IL IN IT LT LV MY NL NO NZ PL PT RU SE SG SK TH TR TW UA ZA</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>234.613000</length>
+    <popularity>0.31921</popularity>
+  </track>
+  <track href="spotify:track:5QAga7YBdkAhTNr93YdwOe">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:6DoH7ywD5BcQvjloe9OcIj">
+      <name>Ray LaMontagne</name>
+    </artist>
+    <id type="isrc">US9SH1000026</id>
+    <album href="spotify:album:1lWUYhltKHQQe0taSWrMlc">
+      <name>Parenthood (Original Television Soundtrack)</name>
+      <released>2010</released>
+      <availability>
+        <territories>AE AR AT AU BE BG BO BR CH CL CM CN CO CZ DE DK DO EC EG ES FI FR GB GR HK HR HU ID IE IL IN IT JO JP KR KW MA MY NL NO NZ PE PH PL PT PY RO RU SA SE SG SI SK SN TH TR TW UY VE ZA</territories>
+      </availability>
+    </album>
+    <track-number>10</track-number>
+    <length>278.652000</length>
+    <popularity>0.35229</popularity>
+  </track>
+  <track href="spotify:track:3lv9TUA15PFRHtMaPhjKKj">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7nwUJBm0HE4ZxD3f5cy5ok">
+      <name>Aretha Franklin</name>
+    </artist>
+    <id type="isrc">USAT20102255</id>
+    <album href="spotify:album:3nIxtIMxYqCiD7ZDE0payb">
+      <name>Soul Queen</name>
+      <released>2007</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>39</track-number>
+    <length>210.133000</length>
+    <popularity>0.33862</popularity>
+  </track>
+  <track href="spotify:track:2ZnaXkXnufIWUDZboZz8lk">
+    <name>Unsatisfied</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761007</id>
+    <album href="spotify:album:2sOLW5TSgXiLZBacdHxO6m">
+      <name>Let It Be</name>
+      <released>1984</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>7</track-number>
+    <length>241.773000</length>
+    <popularity>0.35065</popularity>
+  </track>
+  <track href="spotify:track:2kpuJ1TlDeZ5HXCJOgXKku">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:1T0wRBO0CK0vK8ouUMqEl5">
+      <name>Tom Jones</name>
+    </artist>
+    <id type="isrc">SEWDL6007869</id>
+    <album href="spotify:album:2MyXngTVHbbXSAk93B9a8Q">
+      <name>Tom Jones</name>
+      <released>2011</released>
+      <availability>
+        <territories>AL AM AT AX BA BE BG BY CH CY CZ DE DK EE ES FI FR GB GR HR HU IE IS IT LI LT LU LV MC MT NL NO PL PT RO RS RU SE SK TR UA VA</territories>
+      </availability>
+    </album>
+    <track-number>4</track-number>
+    <length>171.696000</length>
+    <popularity>0.33791</popularity>
+  </track>
+  <track href="spotify:track:2a7eKsOLLNQ3nu0WOQ3hIH">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:16nn7kCHPWIB6uK09GQCNI">
+      <name>Social Distortion</name>
+    </artist>
+    <id type="isrc">USSM10022477</id>
+    <album href="spotify:album:46nX6hzuIb6wEia7OQ2viS">
+      <name>Social Distortion</name>
+      <released>1990</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>255.266000</length>
+    <popularity>0.34998</popularity>
+  </track>
+  <track href="spotify:track:6Cd52FA5ImSNZJJMiBXyqi">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:4ACplpEqD6JIVgKrafauzs">
+      <name>The Everly Brothers</name>
+    </artist>
+    <id type="isrc">USA560743187</id>
+    <album href="spotify:album:1j56s9V1Hqk6REFO27XqLV">
+      <name>The Everly Brothers In Concert</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>18</track-number>
+    <length>230.574000</length>
+    <popularity>0.34795</popularity>
+  </track>
+  <track href="spotify:track:5oNe3SVnxVkDrrPpSu0hKy">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:0WHU92jZQczkt5Q9xmv9oF">
+      <name>Carol Woods</name>
+    </artist>
+    <artist href="spotify:artist:7FpTEI2hQNQSYjChoR7dBo">
+      <name>Timothy T. Mitchum</name>
+    </artist>
+    <id type="isrc">USBYQ0710008</id>
+    <album href="spotify:album:7FPMykszXPYE2a74RlLinr">
+      <name>Across The Universe</name>
+      <released>2007</released>
+      <availability>
+        <territories>US</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>151.173000</length>
+    <popularity>0.33338</popularity>
+  </track>
+  <track href="spotify:track:4OOdr4y9vFngVywhqn5hLZ">
+    <name>Favorite Thing</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761002</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>140.013000</length>
+    <popularity>0.35999</popularity>
+  </track>
+  <track href="spotify:track:0E6DcIiZgIutWczGHWTKq0">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7rgKxnnBAsZ7Q04d6jICu6">
+      <name>Kane</name>
+    </artist>
+    <id type="isrc">NLA200100102</id>
+    <album href="spotify:album:7qCFhs5YoPhOnrNayHxgLK">
+      <name>Singles Only</name>
+      <released>2011</released>
+      <availability>
+        <territories>NL</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>327.800000</length>
+    <popularity>0.32944</popularity>
+  </track>
+  <track href="spotify:track:0A7qZo0VAOTYnIfvnyvQVc">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:3KB2hbfaZ7sJhGV0GikN8k">
+      <name>Acoustic Guitar Songs</name>
+    </artist>
+    <id type="isrc">TCAAU1198878</id>
+    <album href="spotify:album:1Onxjzn1PlsL9nMVw2DjRT">
+      <name>Solo Guitar - Acoustic Guitar Songs - Killing Me Softly</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>292.800000</length>
+    <popularity>0.32420</popularity>
+  </track>
+  <track href="spotify:track:4tsqqqJJjSM6yf48RurPhC">
+    <name>Good to Be Home</name>
+    <artist href="spotify:artist:0tp23bDcTCmG7axeHcLWyF">
+      <name>CoCo Jones</name>
+    </artist>
+    <id type="isrc">USWD11262789</id>
+    <album href="spotify:album:66E2Unfh0jWP2eka6gH40b">
+      <name>Let It Shine</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AL BA BE BG BH CY DK EE FI FO FR GB GI GR HR IE IL IQ IR IS JO KW LB LI LT LU LV MC ME MT NL NO OM PT QA RS SA SE SM SY UA YE ZA</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>207.200000</length>
+    <popularity>0.33764</popularity>
+  </track>
+  <track href="spotify:track:3tAxyknmAzt5lSknobMep7">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:74ASZWbe4lXaubB36ztrGX">
+      <name>Bob Dylan</name>
+    </artist>
+    <id type="isrc">USSM19923022</id>
+    <album href="spotify:album:2Gi9RlYf1VB2WT80ZHTlNs">
+      <name>Self Portrait</name>
+      <released>1970</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BS BT BY BZ CA CD CF CG CH CI CK CM CN CO CR CU CV CY CZ DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MZ NC NE NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TJ TK TL TM TN TO TR TT TV TZ UA UG US UZ VA VC VE VG VN VU WF WS YE YT ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>7</track-number>
+    <length>178.693000</length>
+    <popularity>0.33182</popularity>
+  </track>
+  <track href="spotify:track:2jbLsBJGNDOfUKpqZjkKlu">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:0yq6uHIfFks9yOURUuCITV">
+      <name>Stacy Barthe</name>
+    </artist>
+    <id type="isrc">TCABC1171916</id>
+    <album href="spotify:album:1EPP8Lkd5s9UXplcAzQIvM">
+      <name>Sincerely Yours, Stacy Barthe</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>236.383000</length>
+    <popularity>0.31579</popularity>
+  </track>
+  <track href="spotify:track:64CnzynDf7KUtpsN0EP8NO">
+    <name>Who I'm Gonna Be</name>
+    <artist href="spotify:artist:0tp23bDcTCmG7axeHcLWyF">
+      <name>CoCo Jones</name>
+    </artist>
+    <id type="isrc">USWD11262793</id>
+    <album href="spotify:album:66E2Unfh0jWP2eka6gH40b">
+      <name>Let It Shine</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AL BA BE BG BH CY DK EE FI FO FR GB GI GR HR IE IL IQ IR IS JO KW LB LI LT LU LV MC ME MT NL NO OM PT QA RS SA SE SM SY UA YE ZA</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>173.680000</length>
+    <popularity>0.32668</popularity>
+  </track>
+  <track href="spotify:track:0JuHwJyf9fTTU7wBHNLQYI">
+    <name>Sealed With A Kiss</name>
+    <artist href="spotify:artist:5bnNgwp3nooah9yHAHsnR4">
+      <name>Jason Donovan</name>
+    </artist>
+    <id type="isrc">GBBBA0842790</id>
+    <album href="spotify:album:5ZYvxQFEiqebZjY0SPbQPo">
+      <name>Let It Be Me</name>
+      <released>2008</released>
+      <availability>
+        <territories>AU CH CZ DE DK FI FR GB HU IE MY NO NZ PL PT RU SE SG SK TW ZA</territories>
+      </availability>
+    </album>
+    <track-number>7</track-number>
+    <length>163.506000</length>
+    <popularity>0.34163</popularity>
+  </track>
+  <track href="spotify:track:4JBCoW8hr1MgfTR6k1Dyl6">
+    <name>Sorrow Be Gone</name>
+    <artist href="spotify:artist:1blgL26JbtaUUKUEMR6Hs2">
+      <name>Gemma Hayes</name>
+    </artist>
+    <id type="isrc">GBHBP1001494</id>
+    <album href="spotify:album:3oAG4dGIfiRwa9KubI4hpK">
+      <name>Let It Break</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AL AT AX BA BE BG BY CH CY CZ DE DK EE ES FI FO FR GB GG GI GR HR HU IM IS IT JE LI LT LU LV MC MD ME MK MT NL NO PL PT RO RS RU SE SI SJ SK SM TM TR UA VA</territories>
+      </availability>
+    </album>
+    <track-number>3</track-number>
+    <length>151.874000</length>
+    <popularity>0.31944</popularity>
+  </track>
+  <track href="spotify:track:7D8v4qRAo52xWvyRHgzhzp">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:6MERXsiRbur2oJZFgYRDKz">
+      <name>Vitamin String Quartet</name>
+    </artist>
+    <id type="isrc">USEWC0710119</id>
+    <album href="spotify:album:4ZbIj6m1ukN4aayHdcOncH">
+      <name>The String Quartet Tribute to The Beatles</name>
+      <released>2007</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>3</track-number>
+    <length>230.093000</length>
+    <popularity>0.30758</popularity>
+  </track>
+  <track href="spotify:track:618VtwttGrr7xfFIIoy6Hk">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:6AVLthptCPhfrxlHadOBJD">
+      <name>Jill Scott</name>
+    </artist>
+    <id type="isrc">USHBR0710090</id>
+    <album href="spotify:album:3OUq3A9AOpYzd0qPSGU2hQ">
+      <name>The Real Thing - Words &amp; Sounds, Vol. 3</name>
+      <released>2007</released>
+      <availability>
+        <territories>CA US</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>110.827000</length>
+    <popularity>0.30790</popularity>
+  </track>
+  <track href="spotify:track:7xXEvgS1CX6TTlaqiv9dyo">
+    <name>Let it Be</name>
+    <artist href="spotify:artist:2HcpPno2Aejd2XpN0nDxV9">
+      <name>Studio 99</name>
+    </artist>
+    <id type="isrc">USA370552838</id>
+    <album href="spotify:album:2Gyf8iaH40ewTnnwVX5Yb7">
+      <name>Studio 99 Perform a Tribute to the Beatles</name>
+      <released>2006</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>17</track-number>
+    <length>228.240000</length>
+    <popularity>0.30542</popularity>
+  </track>
+  <track href="spotify:track:44VT2h8k5M9rqtJupn9cL0">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:3cBV24PM5nZsXqopSHvdtS">
+      <name>The Beatles Recovered Band</name>
+    </artist>
+    <id type="isrc">DEBL61173980</id>
+    <album href="spotify:album:5XiqVySrsMQpUtbqm3AHns">
+      <name>30 Beatles Top Hits</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>15</track-number>
+    <length>230.138000</length>
+    <popularity>0.29899</popularity>
+  </track>
+  <track href="spotify:track:2Rfxf9iSD57lJJqaZii45q">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:4Xx6QMLTWppMwdABkN0Afj">
+      <name>Piano Tribute Players</name>
+    </artist>
+    <id type="isrc">USG7D1271206</id>
+    <album href="spotify:album:6PzkD4d8Pq4AepnBK2diBy">
+      <name>25 Piano Tributes to The Beatles</name>
+      <released>2012</released>
+      <availability>
+        <territories>worldwide</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>126.067000</length>
+    <popularity>0.29965</popularity>
+  </track>
+  <track href="spotify:track:5wRQB6IOAQj30qvrOq0AuK">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:5mPVQE6zGajncC74bBWcHh">
+      <name>Piano Love Songs</name>
+    </artist>
+    <id type="isrc">TCAAZ1166793</id>
+    <album href="spotify:album:5Z9h4exHKfWJmMJJeFojhX">
+      <name>Piano Love Songs</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>218.013000</length>
+    <popularity>0.31078</popularity>
+  </track>
+  <track href="spotify:track:6lEiGirSBMfAYOvwCAlCbu">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7CUmdcvfZJrSsg4jnNNwHA">
+      <name>Maneesh de Moor</name>
+    </artist>
+    <id type="isrc">US4R30926921</id>
+    <album href="spotify:album:7yG7pXFaWwsNFMelCQ7TFV">
+      <name>Eckhart Tolle's Music To Quiet The Mind</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>260.507000</length>
+    <popularity>0.29778</popularity>
+  </track>
+  <track href="spotify:track:2nz7kYnsKl3j4qu71bWHPX">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:1MLXQOUzVRfjYAu5xyEntV">
+      <name>The Silver Beetles</name>
+    </artist>
+    <id type="isrc">DEHI90800063</id>
+    <album href="spotify:album:29NzKzffUVuWXZvnfebLWr">
+      <name>A Tribute to the Beatles</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>15</track-number>
+    <length>230.138000</length>
+    <popularity>0.29679</popularity>
+  </track>
+  <track href="spotify:track:3BlcMdjBN3ThOFJPSMkuxR">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:7eacKV5WqetV2IZTDrwKhi">
+      <name>Krystl</name>
+    </artist>
+    <id type="isrc">NLUM71100041</id>
+    <album href="spotify:album:5meYSRyh2OUGjPDYxHxJ3Z">
+      <name>Rolling</name>
+      <released>2011</released>
+      <availability>
+        <territories>BE NL</territories>
+      </availability>
+    </album>
+    <track-number>10</track-number>
+    <length>226.680000</length>
+    <popularity>0.29280</popularity>
+  </track>
+  <track href="spotify:track:5riRcjGmwyqLXG6RIdQZIH">
+    <name>Let It Roll</name>
+    <artist href="spotify:artist:1ga4lWS7NtKo4r9jNSWumc">
+      <name>Alice Russell</name>
+    </artist>
+    <artist href="spotify:artist:465IoLV7sBVtMQ3WJ756BL">
+      <name>The Nextmen</name>
+    </artist>
+    <id type="isrc">GBAJE0705465</id>
+    <album href="spotify:album:0kSUEtTnwzfsn3WMHIjFpK">
+      <name>This Was Supposed To Be The Future</name>
+      <released>2007</released>
+      <availability>
+        <territories>AT AU BE CH CN CZ DE DK EE ES FI GB HK HR HU IE IL IN IT LT LV MY NL NO NZ PL PT RU SE SG SK TH TR TW UA ZA</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>204.346000</length>
+    <popularity>0.30504</popularity>
+  </track>
+  <track href="spotify:track:00xcGFYL3ZFFKiv9VstuVy">
+    <name>Answering Machine</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761011</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>217.986000</length>
+    <popularity>0.32056</popularity>
+  </track>
+  <track href="spotify:track:6oYXNw7mHsl2KAslrYDOPQ">
+    <name>We're Comin' Out</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761003</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>3</track-number>
+    <length>141.360000</length>
+    <popularity>0.31882</popularity>
+  </track>
+  <track href="spotify:track:5Bkd2Jw4XfQ4JSCW8RDVwH">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:3KB2hbfaZ7sJhGV0GikN8k">
+      <name>Acoustic Guitar Songs</name>
+    </artist>
+    <id type="isrc">TCAAT1009057</id>
+    <album href="spotify:album:3Ea7kbN1mC64bj98dwpwun">
+      <name>Relaxing Music for Dogs - Acoustic Guitar Songs</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>3</track-number>
+    <length>292.800000</length>
+    <popularity>0.28979</popularity>
+  </track>
+  <track href="spotify:track:47RT4llbuaBDnP6xEObQ9q">
+    <name>Black Diamond</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761006</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>165.400000</length>
+    <popularity>0.31647</popularity>
+  </track>
+  <track href="spotify:track:3YP09QMhf2MPpq0fI6l8tb">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:70Os9JWahNiD6PHPi85v0g">
+      <name>Acoustic Hits</name>
+    </artist>
+    <id type="isrc">USLS51016412</id>
+    <album href="spotify:album:7iy5lf6vrRnX0IMvpQfIA4">
+      <name>A Tribute To The Beatles</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>12</track-number>
+    <length>221.813000</length>
+    <popularity>0.28812</popularity>
+  </track>
+  <track href="spotify:track:0z3PSiAllUulmFzEgasLt8">
+    <name>Don't Let Me Be The Last To Know</name>
+    <artist href="spotify:artist:26dSoYclwsYLMAKD3tpOr4">
+      <name>Britney Spears</name>
+    </artist>
+    <id type="isrc">USJI10000146</id>
+    <album href="spotify:album:4Lwc1E3m9lYgX4PSKoUmB3">
+      <name>Oops!... I Did It Again</name>
+      <released>1989</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>231.266000</length>
+    <popularity>0.32787</popularity>
+  </track>
+  <track href="spotify:track:7hrSfB1QQXkpE19UACtdzt">
+    <name>Tommy Gets His Tonsils Out</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761004</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>4</track-number>
+    <length>113.840000</length>
+    <popularity>0.31363</popularity>
+  </track>
+  <track href="spotify:track:6jvtd5tY3vwlHh4kOXRL8c">
+    <name>Sixteen Blue</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761010</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>10</track-number>
+    <length>265.440000</length>
+    <popularity>0.31429</popularity>
+  </track>
+  <track href="spotify:track:2jMQQIliQgJQ1fDqnWjjue">
+    <name>Let it Be (as made famous by The Beatles)</name>
+    <artist href="spotify:artist:0JgsUjTawMFZj1PCkO5xkL">
+      <name>Soft Rock Piano Players</name>
+    </artist>
+    <id type="isrc">USA560902002</id>
+    <album href="spotify:album:4fQUWTbjFiEqAcapsU3bRt">
+      <name>Piano Soft Rock</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>247.120000</length>
+    <popularity>0.33404</popularity>
+  </track>
+  <track href="spotify:track:7JxxFDIfgEEjds6JnR35OS">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:0huGEQDDk36uplL0QvI3Kn">
+      <name>Flamenco Guitar Masters</name>
+    </artist>
+    <id type="isrc">USA560945660</id>
+    <album href="spotify:album:2NN0ktOwwRa05rYdXG5Jzh">
+      <name>Flamenco Guitar Classics</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>21</track-number>
+    <length>240.960000</length>
+    <popularity>0.28410</popularity>
+  </track>
+  <track href="spotify:track:7dJ9J4kYtdOd1e9mH8IbDT">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:16nn7kCHPWIB6uK09GQCNI">
+      <name>Social Distortion</name>
+    </artist>
+    <id type="isrc">USTB30400059</id>
+    <album href="spotify:album:4HkojFeEhPMTKEKirXNJGZ">
+      <name>Live At The Roxy</name>
+      <released>1998</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>9</track-number>
+    <length>269.267000</length>
+    <popularity>0.29573</popularity>
+  </track>
+  <track href="spotify:track:6ZAUHRjZQXQMhgyvSZo4qq">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:1ThoqLcyIYvZn7iWbj8fsj">
+      <name>Bill Withers</name>
+    </artist>
+    <id type="isrc">USSM10503917</id>
+    <album href="spotify:album:7nGC5J0f0k7QyilGIdyKjT">
+      <name>Lovely Day: The Best Of Bill Withers</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>12</track-number>
+    <length>154.186000</length>
+    <popularity>0.28236</popularity>
+  </track>
+  <track href="spotify:track:5uVRrgo68ANLiuxFnmqvez">
+    <name>Let It Be (Bossa Version)</name>
+    <artist href="spotify:artist:4H5EtQdvxwz7wEGNlguKAg">
+      <name>Marcela Mangabeira</name>
+    </artist>
+    <id type="isrc">BRABZ0600071</id>
+    <album href="spotify:album:7FsSg66ihkEh20WpiGN2wg">
+      <name>Relaxing Bossa Lounge 4</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>4</track-number>
+    <length>272.718000</length>
+    <popularity>0.31132</popularity>
+  </track>
+  <track href="spotify:track:1RI2WC6joi0YiDUSyapoOi">
+    <name>Let it Be</name>
+    <artist href="spotify:artist:1MLXQOUzVRfjYAu5xyEntV">
+      <name>The Silver Beetles</name>
+    </artist>
+    <id type="isrc">DEHI90800063</id>
+    <album href="spotify:album:6r6k7tbF4m27spk5Vkmb3X">
+      <name>Beatles Covers Collection</name>
+      <released>2012</released>
+      <availability>
+        <territories>worldwide</territories>
+      </availability>
+    </album>
+    <track-number>12</track-number>
+    <length>232.133000</length>
+    <popularity>0.28282</popularity>
+  </track>
+  <track href="spotify:track:5nIbR3oQhYCxa2SiT3jvvO">
+    <name>Seen Your Video</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761008</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>188.520000</length>
+    <popularity>0.30978</popularity>
+  </track>
+  <track href="spotify:track:5OHR8MdWhxiEllVZGMr7rc">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:3K3OsB2PkJBR2qpZoYuSct">
+      <name>The Yellow Subs</name>
+    </artist>
+    <id type="isrc">CAM460412892</id>
+    <album href="spotify:album:5F2XFTM1GdNd1W9fXjNqOu">
+      <name>Yellow Submarine - The Beatles Tribute</name>
+      <released>2005</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>24</track-number>
+    <length>226.553000</length>
+    <popularity>0.28166</popularity>
+  </track>
+  <track href="spotify:track:26GXZikhFZjMQvzeIgEQQd">
+    <name>Let it Be</name>
+    <artist href="spotify:artist:6pmiCc6ZRWmTEix4bxykYw">
+      <name>Kinfolk 9</name>
+    </artist>
+    <id type="isrc">USSM11105389</id>
+    <album href="spotify:album:0aBP2LyqTMkeUb7OUXgL02">
+      <name>The Sing-Off: Season 3: Episode 3 - Current Hits &amp; 60's Favorites</name>
+      <released>2011</released>
+      <availability>
+        <territories>US</territories>
+      </availability>
+    </album>
+    <track-number>13</track-number>
+    <length>104.280000</length>
+    <popularity>0.28116</popularity>
+  </track>
+  <track href="spotify:track:26vPCKdVlVpygcYp8UPeZg">
+    <name>Let It Be (Acapella)</name>
+    <artist href="spotify:artist:54vzrwQHZIzFMHi69Sfe0g">
+      <name>Cavern Voices</name>
+    </artist>
+    <id type="isrc">USJ7U0990620</id>
+    <album href="spotify:album:3igbUaSJdEbeiOv8BUxXHd">
+      <name>Beatles Acapella Tribute</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>8</track-number>
+    <length>207.610000</length>
+    <popularity>0.29374</popularity>
+  </track>
+  <track href="spotify:track:5Tp8iDCCjMdw6ZyX6RASW3">
+    <name>Let It Will Be - Live</name>
+    <artist href="spotify:artist:6tbjWDEIzxoDsBA1FuhfPW">
+      <name>Madonna</name>
+    </artist>
+    <id type="isrc">USWB10606552</id>
+    <album href="spotify:album:0tZyRisNOqyEjioXosI3Lm">
+      <name>The Confessions Tour</name>
+      <released>2007</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>9</track-number>
+    <length>285.120000</length>
+    <popularity>0.30952</popularity>
+  </track>
+  <track href="spotify:track:3oOarwDsLoP8xzoj1Fx0eQ">
+    <name>Igziabeher (Let Jah Be Praised)</name>
+    <artist href="spotify:artist:0oea1hwGMfUxZbLxJc1XUN">
+      <name>Peter Tosh</name>
+    </artist>
+    <id type="isrc">USSM17600654</id>
+    <album href="spotify:album:7aXRSPsEDgXGxFGY235DYz">
+      <name>Legalize It</name>
+      <released>1997</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>275.600000</length>
+    <popularity>0.29686</popularity>
+  </track>
+  <track href="spotify:track:4MHKaWSoBJyJ57A53cYEOH">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:43ZHCT0cAZBISjO8DG9PnE">
+      <name>Elvis Presley</name>
+    </artist>
+    <id type="isrc">USA820800590</id>
+    <album href="spotify:album:5WDJKJzKqvrShEUYpSTS8q">
+      <name>On Stage (Legacy Edition)</name>
+      <released>2010</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>10</track-number>
+    <length>219.720000</length>
+    <popularity>0.29141</popularity>
+  </track>
+  <track href="spotify:track:1ARcuw4AgDfnBEKdra6GnQ">
+    <name>Let It Be (Spanish Guitar Version)</name>
+    <artist href="spotify:artist:6uDFI0IPMeVEJ3urqCeaDf">
+      <name>The Spanish Guitar</name>
+    </artist>
+    <id type="isrc">USA370944670</id>
+    <album href="spotify:album:4QhjdEbQBeaAtVhUVeOdHy">
+      <name>60 Favorites Songs </name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>237.978000</length>
+    <popularity>0.30550</popularity>
+  </track>
+  <track href="spotify:track:0RUFyZyaK1uaIENBJjPSqv">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:5Tw6OSRLoU7IHTO8kHGRQr">
+      <name>Rosie Thomas</name>
+    </artist>
+    <id type="isrc">USSUB0567506</id>
+    <album href="spotify:album:3Pjf7eW6kxHaI5BiIbNPgT">
+      <name>If Songs Could Be Held</name>
+      <released>2005</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO GA GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>220.000000</length>
+    <popularity>0.27308</popularity>
+  </track>
+  <track href="spotify:track:3lRmcCK4SOPTLnEfuGZyxy">
+    <name>Story Of Let It Be</name>
+    <artist href="spotify:artist:4x1nvY2FN8jxqAFA0DA02H">
+      <name>John Lennon</name>
+    </artist>
+    <id type="isrc">US6X81200244</id>
+    <album href="spotify:album:149EhnQzOJmluNYVZ2wogq">
+      <name>His Own Words</name>
+      <released>2012</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>42.627000</length>
+    <popularity>0.30489</popularity>
+  </track>
+  <track href="spotify:track:5nNDgTPRTZQcFZTm9yNkMm">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:1yWjNh9SRE7C59A3LDIwVW">
+      <name>Groove Coverage</name>
+    </artist>
+    <id type="isrc">NOX9X3329115</id>
+    <album href="spotify:album:7gwKycJhTpWtUIpCfXphsP">
+      <name>21st Century</name>
+      <released>2007</released>
+      <availability>
+        <territories>DK FI NO SE</territories>
+      </availability>
+    </album>
+    <track-number>15</track-number>
+    <length>213.307000</length>
+    <popularity>0.27316</popularity>
+  </track>
+  <track href="spotify:track:2dVqrvdh00rIOlZj1ioXl0">
+    <name>Let It Be</name>
+    <artist>
+      <name>Various Artists</name>
+    </artist>
+    <id type="isrc">ES5530900576</id>
+    <album href="spotify:album:5Lfqze6HgcMZxMpgkDCBnp">
+      <name>Baladas Romanticas - Intimisimo Vol.3</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>1</track-number>
+    <length>223.773000</length>
+    <popularity>0.27318</popularity>
+  </track>
+  <track href="spotify:track:1nOzwN07XUfutxoLXTOi5Q">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:4etuCZVdP8yiNPn4xf0ie5">
+      <name>Julio Iglesias</name>
+    </artist>
+    <id type="isrc">NLD010030024</id>
+    <album href="spotify:album:5QSer2rfhnPzkzPxamHk0u">
+      <name>Crazy</name>
+      <released>1993</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AT AU AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ CA CD CF CG CH CI CK CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MZ NA NC NE NG NI NL NO NP NR NU OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG US UY UZ VA VC VE VG VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>185.906000</length>
+    <popularity>0.28409</popularity>
+  </track>
+  <track href="spotify:track:3UbJXF3g7NcZMtGmeIARmM">
+    <name>Androgynous</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761005</id>
+    <album href="spotify:album:2sOLW5TSgXiLZBacdHxO6m">
+      <name>Let It Be</name>
+      <released>1984</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>5</track-number>
+    <length>190.853000</length>
+    <popularity>0.28266</popularity>
+  </track>
+  <track href="spotify:track:6OmLhxwDUkchEV5lX6aaHc">
+    <name>Let It Be</name>
+    <artist href="spotify:artist:13laOGi8Dzc7HAyspU7WPK">
+      <name>ScatterTones</name>
+    </artist>
+    <id type="isrc">TCAAZ1143545</id>
+    <album href="spotify:album:4M3HRSFi2ptkuykdTSwFWe">
+      <name>Voices Only 2011 College A Cappella (Volume 1)</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>18</track-number>
+    <length>209.400000</length>
+    <popularity>0.27051</popularity>
+  </track>
+  <track href="spotify:track:2Bf2P9w9zpKQPY2cniyiT4">
+    <name>How We Let It Be</name>
+    <artist href="spotify:artist:4v4qHupYi7eRJfkniHrp4Z">
+      <name>Young Guns</name>
+    </artist>
+    <id type="isrc">AUCV00500312</id>
+    <album href="spotify:album:7iqeRNIpf8pq8QCAnIlSdz">
+      <name>Young Guns</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>290.653000</length>
+    <popularity>0.29822</popularity>
+  </track>
+  <track href="spotify:track:2FuXLAvb6ICYcJpg8ca44k">
+    <name>Let It Be Me</name>
+    <artist href="spotify:artist:4ACplpEqD6JIVgKrafauzs">
+      <name>The Everly Brothers</name>
+    </artist>
+    <id type="isrc">GBSWE1019525</id>
+    <album href="spotify:album:4wKRl6zRLNrg1WpHwpIGtX">
+      <name>Simply - The Everly Brothers ( 42 Essential Tracks)</name>
+      <released>2011</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>6</track-number>
+    <length>156.412000</length>
+    <popularity>0.28031</popularity>
+  </track>
+  <track href="spotify:track:1VSNZDmgTvVWcSGKXreKj7">
+    <name>Let It Be (feat. Mary Mary)</name>
+    <artist href="spotify:artist:1XJoDYnOfhqL8As7xyB93w">
+      <name>Bebe And Cece Winans</name>
+    </artist>
+    <id type="isrc">USMR50990056</id>
+    <album href="spotify:album:0CExtu2OfFO7mWdzbMwVJJ">
+      <name>Still</name>
+      <released>2009</released>
+      <availability>
+        <territories>AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IN IO IQ IR IS IT JM JO KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ZZ</territories>
+      </availability>
+    </album>
+    <track-number>11</track-number>
+    <length>212.813000</length>
+    <popularity>0.29609</popularity>
+  </track>
+  <track href="spotify:track:76H17e6fbV7sl7eTX1z2O6">
+    <name>Let It Be Sung</name>
+    <artist href="spotify:artist:0EghvcisxKybq4CVO7rB5t">
+      <name>Matt Costa</name>
+    </artist>
+    <artist href="spotify:artist:3GBPw9NK25X1Wt2OUvOwY3">
+      <name>Jack Johnson</name>
+    </artist>
+    <artist href="spotify:artist:2ebfVsLY0Qeekr3PBpx7uH">
+      <name>Dan Lebowitz</name>
+    </artist>
+    <artist href="spotify:artist:4LxHuTFBBOw0VjWD92Tv55">
+      <name>Steve Adams</name>
+    </artist>
+    <artist href="spotify:artist:5HMFK1o5Bl9qY10PgavMhT">
+      <name>Zach Gill</name>
+    </artist>
+    <id type="isrc">USUM70612641</id>
+    <album href="spotify:album:4H6Vj926e1tVCMl82zMIXR">
+      <name>If I Had Eyes</name>
+      <released>2007</released>
+      <availability>
+        <territories>AT AU BE CH CN CZ DK EE ES FI FR HK HR HU IE IL IN IT LT LV MY NL NO NZ PL PT RU SE SG SK TH TR TW UA ZA</territories>
+      </availability>
+    </album>
+    <track-number>2</track-number>
+    <length>249.240000</length>
+    <popularity>0.27942</popularity>
+  </track>
+  <track href="spotify:track:1rhj9ACtHZWKSDtGCpDt6P">
+    <name>Gary's Got A Boner</name>
+    <artist href="spotify:artist:4WPY0N74T3KUja57xMQTZ3">
+      <name>The Replacements</name>
+    </artist>
+    <id type="isrc">USRS73761009</id>
+    <album href="spotify:album:4LwFCUyV4wM6SEg84PaLuL">
+      <name>Let It Be [Expanded Edition]</name>
+      <released>2008</released>
+      <availability>
+        <territories>AD AI AL AM AT AU AW AX AZ BA BE BG BM BV BY CA CH CY CZ DE DK EE ES FI FK FO FR GB GE GF GG GI GL GP GR GS HR HU IE IM IO IS IT JE KY LI LT LU LV MC MD ME MK MQ MS MT NC NL NO NZ PF PL PM PN PT RE RO RS RU SE SH SI SJ SK SM TC TF TR UA US VA VG WF YT</territories>
+      </availability>
+    </album>
+    <track-number>9</track-number>
+    <length>148.573000</length>
+    <popularity>0.29430</popularity>
+  </track>
+</tracks>
