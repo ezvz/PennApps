@@ -18,6 +18,17 @@ static int notify_events;
 static pthread_mutex_t notify_mutex;
 static pthread_cond_t notify_cond;
 
+// Tells us our playlists are ready
+static void container_loaded(sp_playlistcontainer *pc, void *userdata)
+{
+  printf("Container loaded with %d playlists available\n",
+	  sp_playlistcontainer_num_playlists(pc));
+}
+
+// Registers playlist container callbacks
+static sp_playlistcontainer_callbacks pc_callbacks = {
+  .container_loaded = &container_loaded,
+};
 
 static void connection_error(sp_session *session, sp_error error)
 {
@@ -27,7 +38,9 @@ static void connection_error(sp_session *session, sp_error error)
 static void logged_in(sp_session *session, sp_error error)
 {
   printf("Logged in success!\n");
-  pandorify();
+  // Register container callbacks here
+  sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
+  sp_playlistcontainer_add_callbacks(pc, &pc_callbacks, NULL);				     
 }
 
 static void logged_out(sp_session *session)
