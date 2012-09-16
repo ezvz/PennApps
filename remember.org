@@ -1,5 +1,25 @@
 
 
+* libspotify mo
+  for each playlist: is it a folder? 
+    if yes, is it pandora? 
+      if yes, pandorify on.
+      if no, continue.
+  if pandorify still off, then create folder and call pandorify_first() which will
+  just add everything and not sync.
+
+  // this for the version that syncs
+  for each playlist: is it a folder? 
+    if yes, is it pandora? 
+      if yes, pandorify on
+      if no, continue
+    if no && pandorify, then it is a real playlist. for each of these: is it synced with db?
+      if yes, continue
+      if no, perform playlist_sync(playlist)
+
+* playlist_sync(playlist)
+  for each track in the playlist: 
+
 * 
 Should call 
 
