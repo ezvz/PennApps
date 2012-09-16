@@ -39,14 +39,14 @@ def convert(person):
         print >>fp, station
         for song in songs.find({"station": station, "has_uri": 1}):
             print >>fp, song['uri']
-    refresh_tables()
+    fp.close()
     return filename
 
 def run_spotify_tool(person, filename):
 	spotify_cmd = "./pandorify "+person['s_uname']+" "+ person['s_pword']+" "+filename
 	process = None
 	def target():
-		logging.info("Spotify process started")
+		logging.info("Spotify process started with cmd: "+spotify_cmd)
 		process = subprocess.Popen(spotify_cmd, shell=True, stderr=subprocess.PIPE)
 		(stdout, stderr) = process.communicate()
 		logging.info("Spotify process finished")
@@ -55,7 +55,7 @@ def run_spotify_tool(person, filename):
 	thread = threading.Thread(target=target)
 	thread.start()
 	
-	thread.join(10000)
+	thread.join(20000)
 	if thread.is_alive():
 		logging.info("Spotify hung, restarting")
 		process.terminate()
@@ -87,12 +87,14 @@ class ThreadCrawler(threading.Thread):
 			format_songs(songs, email)
 			logging.debug("Calling spotify tools")
 			filename = convert(pandora_user)
-			while not run_spotify_tool(person, filename):
-				pass
-			self.queue.task_done()
+			if person['s_uname'] and person['s_pword']:
+				while not run_spotify_tool(person, filename):
+					pass
 			logging.info("Finished processing person")
 			sendEmail(email, person['user_email'])
-		
+			#refresh_tables()
+			self.queue.task_done()
+			
 t = ThreadCrawler(queue)
 t.setDaemon(True)
 t.start()
