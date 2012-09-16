@@ -98,7 +98,7 @@ static void playlist_added(sp_playlistcontainer *pc, sp_playlist *pl,
  */
 static void container_loaded(sp_playlistcontainer *pc, void *userdata)
 {
-	INFO(stderr, "jukebox: Rootlist synchronized (%d playlists)\n",
+	fprintf(stderr, "jukebox: Rootlist synchronized (%d playlists)\n",
 	    sp_playlistcontainer_num_playlists(pc));
 }
 
