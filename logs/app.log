@@ -232,3 +232,1630 @@ INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blu
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/header-texture.png HTTP/1.1" 404 -
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/icons.png HTTP/1.1" 404 -
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/footer-texture-top.png HTTP/1.1" 404 -
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:18] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:18] "GET /static/images/light-blue/background-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:18] "GET /static/images/light-blue/header-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:18] "GET /static/images/light-blue/icons.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:18] "GET /static/images/light-blue/footer-texture-top.png HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:50] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person pennapps@team.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:35:51] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:root:Processing new person pennapps@team.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:40:32] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:40:32] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:40:32] "GET /static/images/light-blue/background-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:40:32] "GET /static/images/light-blue/header-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:40:32] "GET /static/images/light-blue/icons.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:40:32] "GET /static/images/light-blue/footer-texture-top.png HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:46:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:46:54] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:47:55] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:47:55] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:52:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:52:25] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:52:41] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:52:41] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:54:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:54:58] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:55:14] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:55:14] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:59:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:59:08] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:59:21] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 14:59:21] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:02:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:02:36] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:03:13] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person pennapps@team.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:03:13] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:07:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:07:00] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:07:19] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person pennapps@team.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:07:19] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:12:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:12:10] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:root:Processing new person pennapps@team.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:12:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:12:25] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Yellow+Ledbetter HTTP/1.1" 200 13408
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oye+Como+Va HTTP/1.1" 200 96128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Pusher HTTP/1.1" 200 92227
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Voodoo+Child+%28Slight+Return%29 HTTP/1.1" 200 88058
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Crossroads+%28Live+2005%29 HTTP/1.1" 200 848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Back HTTP/1.1" 200 69239
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cocaine HTTP/1.1" 200 85635
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Screamin%27+And+Cryin%27 HTTP/1.1" 200 106344
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Purple+Haze HTTP/1.1" 200 79764
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Imagine HTTP/1.1" 200 79775
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+It+Be HTTP/1.1" 200 89133
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in '/Users/Sean/Documents/College/Junior/coding/python/pennapps/getUri.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:20:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:20:27] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:20:52] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:20:52] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in '/Users/Sean/Documents/College/Junior/coding/python/pennapps/getUri.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/img/loading43.gif HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:25:35] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in '/Users/Sean/Documents/College/Junior/coding/python/pennapps/getUri.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:07] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/Users/Sean/Documents/College/Junior/coding/python/pennapps/getUri.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:30:48] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in '/Users/Sean/Documents/College/Junior/coding/python/pennapps/getUri.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:35:44] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:root:Processing new person wellecks@gmail.com
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "POST / HTTP/1.1" 200 -
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:38:20] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:41:06] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:41] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/css/social-buttons.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/css/light-blue.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/js/loading.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/js/jquery.validate.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:45:42] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:50:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:50:47] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:51:11] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person vzanoyan@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 15:51:11] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Creep HTTP/1.1" 200 79200
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Street+Spirit+%27Fade+Out%27 HTTP/1.1" 200 67700
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Don%27t+Panic HTTP/1.1" 200 85629
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Disarm HTTP/1.1" 200 92322
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fake+Plastic+Trees+%28Acoustic+Version%29 HTTP/1.1" 200 6175
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Flame HTTP/1.1" 200 78929
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Comfortably+Numb+%28Live%29 HTTP/1.1" 200 15013
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Come+As+You+Are HTTP/1.1" 200 90473
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Another+Brick+In+The+Wall+Part+1 HTTP/1.1" 200 30147
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Shadowboxer HTTP/1.1" 200 30690
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Us+And+Them HTTP/1.1" 200 77165
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fake+Plastic+Trees HTTP/1.1" 200 78833
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Sheep HTTP/1.1" 200 74872
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hometown+Glory+%28Live%29 HTTP/1.1" 200 1151
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=While+My+Guitar+Gently+Weeps+%28Love+Version%29 HTTP/1.1" 200 153
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=On+The+Run HTTP/1.1" 200 83922
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Extraordinary+Machine HTTP/1.1" 200 31463
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Turning+Tables HTTP/1.1" 200 109150
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hey+You HTTP/1.1" 200 85497
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Set+Fire+To+The+Rain HTTP/1.1" 200 105128
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Get+Gone HTTP/1.1" 200 76990
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Scientist+%28Live%29 HTTP/1.1" 200 6766
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=One+And+Only HTTP/1.1" 200 69704
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Another+Brick+In+The+Wall%2C+Part+2 HTTP/1.1" 200 79729
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Eclipse HTTP/1.1" 200 91960
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Brain+Damage HTTP/1.1" 200 95182
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=You+Shook+Me+All+Night+Long HTTP/1.1" 200 107428
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Comfortably+Numb HTTP/1.1" 200 91422
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fake+Plastic+Trees+%28Acoustic%29 HTTP/1.1" 200 8458
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=While+My+Guitar+Gently+Weeps HTTP/1.1" 200 92899
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Long+Cool+Woman HTTP/1.1" 200 87021
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=In+My+Place HTTP/1.1" 200 94808
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=1979 HTTP/1.1" 200 78194
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Scientist HTTP/1.1" 200 105835
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Riders+On+The+Storm HTTP/1.1" 200 84791
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Time+%28Live%29 HTTP/1.1" 200 73891
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Karma+Police HTTP/1.1" 200 103134
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Oh%21+Darling HTTP/1.1" 200 77091
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Here+I+Go+Again HTTP/1.1" 200 87915
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=New+Slang HTTP/1.1" 200 27330
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=He+Won%27t+Go HTTP/1.1" 200 42229
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Waste HTTP/1.1" 200 82086
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Eyes+On+Fire HTTP/1.1" 200 91901
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Apologize+%28Timbaland+Radio+Remix%29 HTTP/1.1" 200 798
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Rolling+In+The+Deep+%28Radio+Edit%29 HTTP/1.1" 200 11613
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=We+Are+Young HTTP/1.1" 200 68757
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Howl HTTP/1.1" 200 70250
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Helena+Beat HTTP/1.1" 200 36928
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Rolling+In+The+Deep HTTP/1.1" 200 100549
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Rumour+Has+It HTTP/1.1" 200 105101
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Dog+Days+Are+Over HTTP/1.1" 200 89808
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Skinny+Love HTTP/1.1" 200 90205
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Tighten+Up HTTP/1.1" 200 78550
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Awake+My+Soul HTTP/1.1" 200 103741
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Home HTTP/1.1" 200 74542
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Shine+On+You+Crazy+Diamond+%28Parts+I-V%29 HTTP/1.1" 200 148
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=With+A+Little+Help+From+My+Friends HTTP/1.1" 200 79866
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Time HTTP/1.1" 200 76119
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Teardrop HTTP/1.1" 200 89068
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Thrill+Is+Gone HTTP/1.1" 200 94450
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Black+Star HTTP/1.1" 200 75473
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Pumped+Up+Kicks HTTP/1.1" 200 92928
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Secrets HTTP/1.1" 200 81813
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Criminal HTTP/1.1" 200 81510
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Have+You+Ever+Seen+The+Rain%3F HTTP/1.1" 200 91216
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Ain%27t+No+Sunshine+When+She%27s+Gone HTTP/1.1" 200 65822
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=1901 HTTP/1.1" 200 94067
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Ain%27t+No+Sunshine HTTP/1.1" 200 87753
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Revolution HTTP/1.1" 200 81095
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Chasing+Pavements HTTP/1.1" 200 108237
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Welcome+To+The+Machine HTTP/1.1" 200 103518
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Wish+You+Were+Here HTTP/1.1" 200 86766
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Creep+%28Acoustic%29 HTTP/1.1" 200 9999
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Back+To+Black HTTP/1.1" 200 55950
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Come+Together HTTP/1.1" 200 88286
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+House+Of+The+Rising+Sun HTTP/1.1" 200 98835
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=High+And+Dry HTTP/1.1" 200 85848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fast+As+You+Can HTTP/1.1" 200 66485
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=In+The+Waiting+Line HTTP/1.1" 200 49460
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Dream+On HTTP/1.1" 200 83066
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Layla+%28Unplugged+Version%29 HTTP/1.1" 200 8011
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Make+You+Feel+My+Love HTTP/1.1" 200 98453
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Killing+Me+Softly+With+His+Song HTTP/1.1" 200 92524
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cupid HTTP/1.1" 200 75778
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hold+On%2C+I%27m+Coming HTTP/1.1" 200 93165
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=1940+%28Amplive+Remix%29 HTTP/1.1" 200 571
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=This+Love+%28Will+Be+Your+Downfall%29 HTTP/1.1" 200 2598
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+Your+Love+Grow+Tall HTTP/1.1" 200 2739
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Walking+On+A+Dream HTTP/1.1" 200 72414
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Chasing+Pavements+%28Live%29 HTTP/1.1" 200 1595
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Locked+Inside HTTP/1.1" 200 56015
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Littlest+Things HTTP/1.1" 200 30251
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Young+Folks HTTP/1.1" 200 84456
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=To+Kingdom+Come HTTP/1.1" 200 98778
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=15+Step HTTP/1.1" 200 43594
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Nighttiming HTTP/1.1" 200 16171
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Dashboard HTTP/1.1" 200 62176
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Girlfriend HTTP/1.1" 200 78266
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=My+Moon+My+Man+%28Grizzly+Bear+Remix%29 HTTP/1.1" 200 4023
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Beautiful%2C+Dirty%2C+Rich HTTP/1.1" 200 77852
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=With+Every+Heart+Beat+%28Radio+Edit%29 HTTP/1.1" 200 144
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Back+In+Your+Head HTTP/1.1" 200 56114
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Breaking+It+Up HTTP/1.1" 200 105275
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Such+Great+Heights HTTP/1.1" 200 41646
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mushaboom HTTP/1.1" 200 18159
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=It%27s+Amazing HTTP/1.1" 200 88064
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=When+Did+Your+Heart+Go+Missing%3F HTTP/1.1" 200 14603
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Now+At+Last HTTP/1.1" 200 86062
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=To+Be+Alone+With+You HTTP/1.1" 200 41404
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Lady+In+Spain HTTP/1.1" 200 110483
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Ottoman HTTP/1.1" 200 115178
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Reeling HTTP/1.1" 200 96025
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=All+These+Things+That+I%27ve+Done HTTP/1.1" 200 55618
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Song+For+No+One HTTP/1.1" 200 109915
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Wonderwall HTTP/1.1" 200 78489
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Sex+On+Fire HTTP/1.1" 200 93258
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Change+Your+Mind HTTP/1.1" 200 85377
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hannah HTTP/1.1" 200 56424
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Sleepyhead HTTP/1.1" 200 99386
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fashion HTTP/1.1" 200 80162
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Seaside HTTP/1.1" 200 82888
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=If+I+Ever+Feel+Better+%28Remix%29 HTTP/1.1" 200 139
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Life+In+Technicolor HTTP/1.1" 200 63848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Waitin%27+For+A+Superman HTTP/1.1" 200 10081
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+Emma HTTP/1.1" 200 86909
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Good+To+Sea HTTP/1.1" 200 25005
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Into+The+Mystic HTTP/1.1" 200 102762
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=No+Sunlight HTTP/1.1" 200 60039
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+World+We+Live+In HTTP/1.1" 200 96111
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Kiss+With+A+Fist HTTP/1.1" 200 19660
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Flume HTTP/1.1" 200 93917
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Red+Red+Red HTTP/1.1" 200 77030
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Let+Go HTTP/1.1" 200 68320
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=On+The+Radio HTTP/1.1" 200 68322
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mushaboom+%28Postal+Service+Mix%29 HTTP/1.1" 200 140
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=I%27m+Yours HTTP/1.1" 200 78910
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Winner+Is HTTP/1.1" 200 79792
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Love%2C+Save+The+Empty HTTP/1.1" 200 23478
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Lisztomania+%28Classixx+Version%29 HTTP/1.1" 200 1851
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Campus HTTP/1.1" 200 97054
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Seed+2.0 HTTP/1.1" 200 17341
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=How+My+Heart+Behaves HTTP/1.1" 200 3714
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Kids HTTP/1.1" 200 82147
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Smile HTTP/1.1" 200 80014
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Cold+War HTTP/1.1" 200 53031
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Tears+Dry+On+Their+Own HTTP/1.1" 200 88090
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Collide+%28Acoustic+Version%29 HTTP/1.1" 200 2480
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Animal HTTP/1.1" 200 65422
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Never+Gonna+Happen HTTP/1.1" 200 24888
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Navy+Taxi HTTP/1.1" 200 3422
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Paper+Bag HTTP/1.1" 200 95084
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Spaceman HTTP/1.1" 200 80810
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Swing+Tree HTTP/1.1" 200 110891
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Stay+Beautiful HTTP/1.1" 200 101770
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Momma%27s+Boy HTTP/1.1" 200 73012
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Laughing+With+%28Live%29 HTTP/1.1" 200 34101
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Falling+Through+The+Roof HTTP/1.1" 200 1739
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Woods HTTP/1.1" 200 82493
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Rawnald+Gregory+Erickson+The+Second HTTP/1.1" 200 3869
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Lasso HTTP/1.1" 200 77262
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=I+Feel+It+All HTTP/1.1" 200 72022
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=New+Soul HTTP/1.1" 200 89085
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Sweet+Disposition HTTP/1.1" 200 61449
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Run+Run+Run HTTP/1.1" 200 82919
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Pull+My+Heart+Away HTTP/1.1" 200 7740
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Two+Weeks+%28Radio+Mix%29 HTTP/1.1" 200 131
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Swimming+In+The+Flood HTTP/1.1" 200 2726
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fireworks HTTP/1.1" 200 63924
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=This+Modern+Love HTTP/1.1" 200 92186
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=How+I+Feel HTTP/1.1" 200 75647
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Trying+Your+Luck HTTP/1.1" 200 4331
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Lisztomania HTTP/1.1" 200 66772
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=10%2C000+Nights HTTP/1.1" 200 47582
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Up+Against+The+Wall HTTP/1.1" 200 93257
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Gimme+Sympathy HTTP/1.1" 200 14380
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Forever HTTP/1.1" 200 70759
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Little+Bit HTTP/1.1" 200 82760
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Another+Day+%28feat.+Jill+Scott%29 HTTP/1.1" 200 734
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=I%27m+A+Lady HTTP/1.1" 200 92159
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Way+I+Am HTTP/1.1" 200 78761
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Genius+Next+Door HTTP/1.1" 200 1786
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Sorta+Fairytale HTTP/1.1" 200 25751
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Something+Good+Can+Work HTTP/1.1" 200 23800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Fences HTTP/1.1" 200 75196
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Silver+Lining HTTP/1.1" 200 87601
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Janglin%27 HTTP/1.1" 200 6131
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=All+The+World+Tonight HTTP/1.1" 200 20136
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Feast+Of+Hearts HTTP/1.1" 200 3801
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Won%27t+Turn+Back HTTP/1.1" 200 69213
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Are+You+Nervous%3F HTTP/1.1" 200 52330
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Cave HTTP/1.1" 200 98213
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Arms HTTP/1.1" 200 70337
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Send+Me+On+My+Way HTTP/1.1" 200 14747
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Sleeping+Sickness HTTP/1.1" 200 27332
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Finer+Feelings HTTP/1.1" 200 38678
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Long+Distance+Call HTTP/1.1" 200 85653
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Forever+Young HTTP/1.1" 200 79883
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Superstar HTTP/1.1" 200 65082
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Caring+Is+Creepy HTTP/1.1" 200 5683
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Vcr HTTP/1.1" 200 98991
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hang+Me+Up+To+Dry HTTP/1.1" 200 3848
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=North HTTP/1.1" 200 80746
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Bigger+Boys+And+Stolen+Sweethearts HTTP/1.1" 200 3603
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Feel+Good+Inc. HTTP/1.1" 200 103112
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=A+Dustland+Fairytale HTTP/1.1" 200 14864
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Dancing+On+My+Own HTTP/1.1" 200 61497
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=L.E.S.+Artistes HTTP/1.1" 200 110165
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Nicest+Thing HTTP/1.1" 200 11093
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Way+We+Get+By HTTP/1.1" 200 20532
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Little+Secrets HTTP/1.1" 200 86078
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Island+In+The+Sun HTTP/1.1" 200 90925
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Bad+Thing HTTP/1.1" 200 102715
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Nobody+Lost%2C+Nobody+Found HTTP/1.1" 200 23890
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Back+To+The+Start HTTP/1.1" 200 86107
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Merry+Happy HTTP/1.1" 200 70700
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hallelujah HTTP/1.1" 200 83316
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Bulletproof HTTP/1.1" 200 79217
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Tired HTTP/1.1" 200 81268
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Run+%28I%27m+A+Natural+Disaster%29 HTTP/1.1" 200 5122
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mr.+President HTTP/1.1" 200 84376
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Warrant HTTP/1.1" 200 98821
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Soon+It+Will+Be+Cold+Enough+To+Build+Fires HTTP/1.1" 200 2567
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Wake+Up HTTP/1.1" 200 74530
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Inside+Job HTTP/1.1" 200 110264
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Tonight+You+Belong+To+Me HTTP/1.1" 200 101947
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Lux+Aeterna HTTP/1.1" 200 117415
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hometown+Glory HTTP/1.1" 200 107474
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Riot+Van HTTP/1.1" 200 40025
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Moth%27s+Wings HTTP/1.1" 200 14234
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Setting+Forth HTTP/1.1" 200 9831
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Love+Like+A+Sunset+Part+II HTTP/1.1" 200 3042
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Blood+Bank HTTP/1.1" 200 34860
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Tymps+%28The+Sick+In+The+Head+Song%29 HTTP/1.1" 200 6545
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=My+Same HTTP/1.1" 200 85419
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=VH1 HTTP/1.1" 200 90625
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Satellite HTTP/1.1" 200 75993
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Bad+Romance HTTP/1.1" 200 72685
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Time+To+Pretend HTTP/1.1" 200 60237
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Falling+In+Love+At+A+Coffee+Shop HTTP/1.1" 200 6246
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Bling+%28Confession+Of+A+King%29 HTTP/1.1" 200 4158
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Champagne+Supernova HTTP/1.1" 200 102104
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Do+Me+A+Favour HTTP/1.1" 200 49214
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Dance+Or+Die HTTP/1.1" 200 80964
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Water HTTP/1.1" 200 71349
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=My+Moon+My+Man HTTP/1.1" 200 68833
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Standing+On+The+Shore HTTP/1.1" 200 65618
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Perfect+Games HTTP/1.1" 200 10185
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Ghostwriter HTTP/1.1" 200 97442
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=The+Great+Unknown HTTP/1.1" 200 94127
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Hideaway HTTP/1.1" 200 77767
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=All+I+Have HTTP/1.1" 200 83187
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 16:04:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 16:04:14] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in 'app.py', reloading
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
