@@ -118,7 +118,7 @@ static sp_playlistcontainer_callbacks pc_callbacks = {
 static void logged_in(sp_session *session, sp_error error) {
     ASSERT_SP_ERROR_OK(error);
     
-    sp_playlistcontainer *pc = sp_session_playerlistcontainer(session);
+    sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
     int i;
 
     sp_playlistcontainer_add_callbacks(pc,
@@ -166,7 +166,9 @@ int pf_spotify_init(const char *username, const char* password) {
     sp_session *session;
     sp_session_config config;
     sp_error error;
-    
+
+    memset(&config, 0, sizeof(sp_session_config));
+
     config.api_version = SPOTIFY_API_VERSION;
     config.cache_location = "tmp";
     config.settings_location = "tmp";
