@@ -4,7 +4,6 @@ import sendgrid
 import Queue
 from getUri import *
 from flask import Flask, render_template, request
-from flaskext.mongoalchemy import MongoAlchemy
 from pymongo import Connection
 from subprocess import call
 
