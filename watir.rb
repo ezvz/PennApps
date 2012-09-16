@@ -3,16 +3,18 @@ require 'watir-webdriver'
 require 'nokogiri'
 require 'headless'
 require 'mongo'
+require 'net/http'
+require 'uri'
 
 def add_to_mongo(hash)
 	puts "Adding to database..."
 	@conn = Mongo::Connection.new
-	@db   = @conn['pandorify']
-	@coll = @db['Song']
+	@db   = @conn['prod']
+	@coll = @db['rubysongs']
 	index = @coll.count + 1
 
 	hash.each_pair do |key, value|
-		@coll.insert({index.to_s => key + "~" + value[0] + "~" + value[1] + "~" + value[2]})
+		@coll.insert({"info" => key + "~" + value[0] + "~" + value[1] + "~" + value[2]})
 		index = index + 1
 	end
 end
@@ -43,7 +45,7 @@ def expand_likes(browser)
 			show_more.fire_event("onclick")
 		end
 		counter = counter + 1
-		sleep 1
+		sleep 2
 	end
 	return browser
 end
@@ -87,6 +89,7 @@ def scrape_pandora(username, password)
 
 	headless.destroy
 	puts "Done!"
+	return songs
 end
 
-scrape_pandora("pennapps@team.com", "password")
+output = scrape_pandora(ARGV[0], ARGV[1])
