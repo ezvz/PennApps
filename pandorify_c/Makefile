@@ -1,13 +1,6 @@
-TARGET=posix_stu
-CFLAGs += -Werror
 
-include common.mk
 
-$(TARGET): main.o
-	$(CC) $(CFLAGS) $(LDFLAGS) $(LDLIBS) $^ -o $@
+all: 
+	gcc -g -I/usr/local/include -L/usr/local/lib -o pandorify main.c -lmongoc -I../libspotify-Linux/include -L../libspotify-Linux/ -lspotify -DMONGO_HAVE_UNISTD
 
-ifdef DEBUG
-ifeq ($(shell uname),Darwin)
-	install_name_tool -change @loader_path/../Frameworks/libspotify.framework/libspotify @rpath/libspotify.so $@
-endif
-endif
+
