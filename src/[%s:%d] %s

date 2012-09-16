@@ -1,0 +1,6 @@
+libspotify trace from 12.1.51.g86c92b43 Release Linux-x86_64 
+
+< sp_session_create() = 0
+> sp_session_login(0x118b7c0 'bish3al' '<hidden>' 0) on 0x7f0d6c95e700
+> sp_session_connectionstate(0x118b7c0) on 0x7f0d6c95e700
+< sp_session_connectionstate() = 0
