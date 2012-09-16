@@ -42,7 +42,7 @@ def convert(person):
     refresh_tables()
     return filename
 
-def run_spotify_tool():
+def run_spotify_tool(person, filename):
 	spotify_cmd = "./pandorify "+person['s_uname']+" "+ person['s_pword']+" "+filename
 	process = None
 	def target():
@@ -86,10 +86,11 @@ class ThreadCrawler(threading.Thread):
 			format_songs(songs, email)
 			logging.debug("Calling spotify tools")
 			filename = convert(pandora_user)
-			#while not run_spotify_tool():
-			#	pass
+			while not run_spotify_tool(person, filename):
+				pass
 			self.queue.task_done()
-			sendEmail(email, pandora_user)
+			logging.info("Finished processing person")
+			sendEmail(email, person['user_email'])
 		
 t = ThreadCrawler(queue)
 t.setDaemon(True)
