@@ -100,7 +100,6 @@ def scrape_pandora(username, password)
 	add_to_mongo(songs)
 
 	headless.destroy
-	browser.close
 	puts "Done!"
 	return songs
 end
