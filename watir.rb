@@ -22,14 +22,19 @@ end
 def login_to_pandora(username, password)
 	browser = Watir::Browser.start "http://www.pandora.com/account/sign-in"
 	puts "Login page reached. Logging in..."
+	puts username
 	browser.text_field(:name => 'email').when_present.set(username)
 	browser.text_field(:name => 'password').when_present.set(password)
 	browser.button(:value, 'Sign in').click
-	puts "Login successful. Navigating to likes page..."
+	begin
+		browser.wait_until(10) { browser.div(:class, "myprofile_icon").exists? }
+	rescue TimeoutError
+		return 1
 	return browser
 end
 
 def goto_likes(browser)
+	puts "Login successful. Navigating to likes page..."
 	browser.wait_until { browser.div(:class, "myprofile_icon").exists? }
 	browser.div(:class, "myprofile_icon").fire_event("onclick")
 	browser.wait_until { browser.link(:id, "profile_tab_likes").exists? }
@@ -85,6 +90,8 @@ def scrape_pandora(username, password)
 	headless.start
 
 	browser = login_to_pandora(username, password)
+	if(browser==1)
+		return 1
 	browser = goto_likes(browser)
 	browser = expand_likes(browser)
 	songs = parse_likes(browser, username)

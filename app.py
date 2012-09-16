@@ -117,7 +117,8 @@ def route_root():
 		queue.put(person)
 		logging.info("added to queue")
 
-		saved = 'Processing your music, please check your email soon!'
+
+		saved = "Your Spotify playlists are getting Pandorify'd!"
 
 	return render_template('index.html', saved=saved)
 
@@ -198,23 +199,24 @@ def format_songs(songs, email):
 	spl = []
 	for song in songs:
 		spl = song.split('~')
-		print spl
-		uri = getUri(spl[0],spl[1])
-		if uri != None:	
-			song = {"title": spl[0],
-					"artist": spl[1],
-					"station": spl[2],
-					"email": email,
-					"uri": uri,
-					"has_uri": 1}
-		else:
-			song = {"title": spl[0],
-					"artist": spl[1],
-					"station": spl[2],
-					"email": email,
-					"uri": "",
-					"has_uri": 0}
-		db.songs.insert(song)
+		if(spl[3]==email):
+			print spl
+			uri = getUri(spl[0],spl[1])
+			if uri != None:	
+				song = {"title": spl[0],
+						"artist": spl[1],
+						"station": spl[2],
+						"email": email,
+						"uri": uri,
+						"has_uri": 1}
+			else:
+				song = {"title": spl[0],
+						"artist": spl[1],
+						"station": spl[2],
+						"email": email,
+						"uri": "",
+						"has_uri": 0}
+			db.songs.insert(song)
 
 def get_songtable():
 	return db.songs.find()
