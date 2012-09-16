@@ -6,7 +6,9 @@ from getUri import *
 from flask import Flask, render_template, request
 from pymongo import Connection
 from subprocess import call
+import logging
 
+logging.basicConfig(filename='logs/app.log',level=logging.DEBUG)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -22,23 +24,75 @@ db = connection['prod']
 import Queue, threading
 queue = Queue.Queue()
 
+def refresh_tables():
+	db.songs.drop()
+
+def convert(person):
+    songs = db.songs
+    filename = "stations_songs_"+person+".txt"
+    fp = file(filename, 'w')
+    delimiter = "---"
+
+    stations = songs.distinct("station")
+    for station in stations:
+        print >>fp, delimiter
+        print >>fp, station
+        for song in songs.find({"station": station, "has_uri": 1}):
+            print >>fp, song['uri']
+    refresh_tables()
+    return filename
+
+def run_spotify_tool():
+	spotify_cmd = "./pandorify "+person['s_uname']+" "+ person['s_pword']+" "+filename
+	process = None
+	def target():
+		logging.info("Spotify process started")
+		process = subprocess.Popen(spotify_cmd, shell=True, stderr=PIPE)
+		(stdout, stderr) = process.communicate()
+		logging.info("Spotify process finished")
+		logging.debug(stderr)
+
+	thread = threading.Thread(target=target)
+	thread.start()
+	
+	thread.join(15)
+	if thread.is_alive():
+		logging.info("Spotify hung, restarting")
+		process.terminate()
+		thread.join()
+	return False
+
 class ThreadCrawler(threading.Thread):
 	def __init__(self, queue):
 		threading.Thread.__init__(self)
 		self.queue = queue
 		
 	def run(self):
+		logging.debug("Started thread")
 		while True:
 			person = self.queue.get()
 			pandora_user = person['p_uname']
+			logging.info("Processing new person %s", pandora_user)
 			email = person['user_email']
-			call(["ruby", "watir.rb", person['p_uname'], person['p_pword']])
+			logging.debug("Calling Ruby script")
+			try: 
+				subprocess.check_call("ruby", "watir.rb", person['p_uname'], person['p_pword'])
+			except CalledProcessError: 
+				refresh_tables()
+				self.queue.task_done()
 			songs = get_ruby_songs(pandora_user)
 			format_songs(songs, email)
-			sendEmail(email, pandora_user)
-
+			logging.debug("Calling spotify tools")
+			filename = convert(pandora_user)
+			#while not run_spotify_tool():
+			#	pass
 			self.queue.task_done()
-			
+			sendEmail(email, pandora_user)
+		
+t = ThreadCrawler(queue)
+t.setDaemon(True)
+t.start()
+	
 @app.route('/', methods=['POST', 'GET'])
 def route_root():
 	saved = ''
@@ -47,6 +101,7 @@ def route_root():
 	if request.method == 'POST':
 		#if request.form['songs']:
 		#	return request.form['songs']
+		logging.info("POST recieved")
 
 		pandora_user = request.form['pandoraUsername']
 		pandora_pass = request.form['pandoraPassword']
@@ -60,8 +115,9 @@ def route_root():
 					"p_pword": pandora_pass,
 					"user_email": email }
 		queue.put(person)
+		logging.info("added to queue")
 
-		saved = 'Your playlists are ready!'
+		saved = 'Processing your music, please check your email soon!'
 
 	return render_template('index.html', saved=saved)
 
@@ -179,9 +235,5 @@ def list_person_entries():
 
 if __name__ == '__main__':
 	# Bind to PORT if defined, otherwise default to 5000.
-	t = ThreadCrawler(queue)
-	t.setDaemon(True)
-	t.start()
 	port = int(os.environ.get('PORT', 5000))
 	app.run(host='0.0.0.0', port=port)
-	queue.join()

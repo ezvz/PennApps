@@ -26,6 +26,8 @@ int num_wait_loops = 500000;
 int placeholders[50] = {0}; // List of placeholder indices
 int current_place_index = 0;
 
+char filename[256];
+
 void list_playlists() {
   sp_playlistcontainer *pc = sp_session_playlistcontainer(g_session);
   int i, j, level = 0;
@@ -164,7 +166,7 @@ void pandorify_raw() {
   int make_new_playlist = 0;
   // This is our playlist in between runs
   sp_playlist *pl;
-  FILE *fp = fopen("stations_songs.txt", "r");
+  FILE *fp = fopen(filename, "r");
   
   //printf("just adding playlist\n");
   //pl = sp_playlistcontainer_add_new_playlist(pc, "foo");
@@ -359,8 +361,8 @@ int main(int argc, char **argv)
 {
   int next_timeout = 0;
   int finished = 0;
-  
-  if(argc < 3) {
+ 
+  if(argc < 4) {
     fprintf(stderr,"Usage: %s <username> <password>\n",argv[0]);
   }
   pthread_mutex_init(&notify_mutex, NULL);
@@ -370,6 +372,8 @@ int main(int argc, char **argv)
     fprintf(stderr,"Spotify failed to initialize\n");
     exit(-1);
   }
+  
+  strncpy(filename, argv[3], 256);
 
   pthread_mutex_lock(&notify_mutex);
   for (;;) {

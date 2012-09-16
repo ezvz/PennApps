@@ -49,3 +49,6 @@ basta@mozilla.com
 
 user: wellecks@gmail.com
 pw: p3nnapps
+* testing
+  pennapps@team.com
+  password
