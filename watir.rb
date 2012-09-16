@@ -3,11 +3,13 @@ require 'watir-webdriver'
 require 'nokogiri'
 require 'headless'
 require 'mongo'
+require 'net/http'
+require 'uri'
 
 def add_to_mongo(hash)
 	puts "Adding to database..."
 	@conn = Mongo::Connection.new
-	@db   = @conn['pandorify']
+	@db   = @conn['prod']
 	@coll = @db['Song']
 	index = @coll.count + 1
 
@@ -43,7 +45,7 @@ def expand_likes(browser)
 			show_more.fire_event("onclick")
 		end
 		counter = counter + 1
-		sleep 1
+		sleep 2
 	end
 	return browser
 end
@@ -87,6 +89,12 @@ def scrape_pandora(username, password)
 
 	headless.destroy
 	puts "Done!"
+	return songs
 end
 
-scrape_pandora("pennapps@team.com", "password")
+output = scrape_pandora(ARGV[0], ARGV[1])
+
+url = URI.parse('http://0.0.0.0:5000/done')
+postData = Net::HTTP.post_form(url, {'songs'=> output.to_s})
+
+puts postData.body

@@ -1,66 +1,54 @@
 import os
 import subprocess
-import sendgrid
+#import sendgrid
 import Queue
-from getUri import *
+#from getUri import *
 from flask import Flask, render_template, request
 from flaskext.mongoalchemy import MongoAlchemy
+from pymongo import Connection
+from subprocess import call
 
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-app.config['MONGOALCHEMY_DATABASE'] = 'pandorify'
-db = MongoAlchemy(app)
+#app.config['MONGOALCHEMY_DATABASE'] = 'prod'
+#db = MongoAlchemy(app)
 
-processQueue = Queue()
+connection = Connection('localhost', 27017)
+db = connection['prod']
 
-def manageQueue:
-	next = processQueue.get()
-	# Run Ruby Process here on next
-	sendEmail(next.user_email, next.p_uname)
-	if processQueue.empty():
-		return False
-
-
-
-
-
-
-
-
-class Person(db.Document):
-	s_uname = db.StringField()
-	s_pword = db.StringField()
-	p_uname = db.StringField()
-	p_pword = db.StringField()
-	user_email = db.StringField()
-	songs = db.ListField(db.StringField())
-
+# Run Ruby Process here on next
+#sendEmail(next.user_email, next.p_uname)
 
 @app.route('/', methods=['POST', 'GET'])
 def route_root():
 	saved = ''
+	songs = ''
 	if request.method == 'POST':
+		#if request.form['songs']:
+		#	return request.form['songs']
+
 		pandora_user = request.form['pandoraUsername']
 		pandora_pass = request.form['pandoraPassword']
 		spotify_user = request.form['spotifyUsername']
 		spotify_pass = request.form['spotifyPassword']
 		email = request.form['email']
 
-		p = Person(s_uname = spotify_user,
-					s_pword = spotify_pass,
-					p_uname = pandora_user,
-					p_pword = pandora_pass,
-					user_email = email,
-					songs = []
-					)
-		p.save()
+		person = {	"s_uname": spotify_user,
+					"s_pword": spotify_pass,
+					"p_uname": pandora_user,
+					"p_pword": pandora_pass,
+					"user_email": email }
+		ppl = db.people
+		ppl.insert(person)
+
 		saved = 'Thanks, we are processing your info and will email you when your playlist is ready!'
-		processQueue.put(p)
-		manageQueue()
-	return render_template('index.html', saved=saved)
-
-
+		#songs = subprocess.check_output(["ruby", "watir.rb", pandora_user, pandora_pass])
+		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)
+		#songs, err = out.communicate()
+		#processQueue.put(p)
+		#manageQueue()
+	return render_template('index.html', saved=saved, songs=songs)
 
 def sendEmail(email, pandora_user):
 	#p = Person.query.filter(Person.user_email==email).first()
@@ -73,11 +61,11 @@ def sendEmail(email, pandora_user):
 	#		songsInvalid.append(songInfo[0])
 	#	else:
 	#		songsValid.append(songInfo[0])
-	s = sendgrid.Sendgrid('varantz', 'sendPass123', secure=True)
-	message = sendgrid.Message("vzanoyan@gmail.com", "Pandorify!", "", "<b>Your playlist is ready!</b>")
-	message.add_to(email, pandora_user)
+	#s = sendgrid.Sendgrid('varantz', 'sendPass123', secure=True)
+	#message = sendgrid.Message("vzanoyan@gmail.com", "Pandorify!", "", "<b>Your playlist is ready!</b>")
+	#message.add_to(email, pandora_user)
 
-	s.web.send(message)
+	#s.web.send(message)
 
 	
 	return
@@ -92,17 +80,18 @@ def route_entries():
 def about():
 	return "Built at PennApps 2012."
 
+@app.route('/done')
+def about():
+	return request.form['songs']
+
 
 def list_person_entries():
-    entries = Person.query.all()
-    content = '<p>Entries:</p>'
-    for entry in entries:
-        content += '<p>%s</p>' % entry.s_uname
-    return content
+    content = ''
+    ppl = db.people.find()
+    for p in ppl:
+    	content += 'Pandora Username:'+ p['p_uname']
 
-def handle_submit(p_user, p_pass, s_user, s_pass):
-	out = p_user + ', ' + p_pass + ', ' + s_user + ', ' + s_pass
-	return out
+	return content
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
