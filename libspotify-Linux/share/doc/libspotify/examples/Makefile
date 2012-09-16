@@ -1,4 +1,4 @@
-EXAMPLES=jukebox spshell localfiles
+EXAMPLES=jukebox spshell localfiles pandorify
 
 .PHONY: all clean
 
