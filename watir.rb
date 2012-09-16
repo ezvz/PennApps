@@ -24,9 +24,9 @@ def scrape_pandora(username, password)
 	browser = Watir::Browser.start "http://www.pandora.com/account/sign-in"
 
 
-	browser.text_field(:name => 'email').when_present.set("pennapps@team.com")
+	browser.text_field(:name => 'email').when_present.set(username)
 
-	browser.text_field(:name => 'password').when_present.set("password")
+	browser.text_field(:name => 'password').when_present.set(password)
 
 	browser.button(:value, 'Sign in').click
 
@@ -81,7 +81,7 @@ def scrape_pandora(username, password)
 	headless.destroy
 end
 
-
+scrape_pandora("pennapps@team.com", "password")
 #basta@mozilla.com
 
 	#browser.text_field(:id => 'login_password').when_present.set("password")
