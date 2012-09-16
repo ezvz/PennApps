@@ -44,8 +44,8 @@ static void container_loaded(sp_playlistcontainer *pc, void *userdata)
 static void playlist_added(sp_playlistcontainer *pc, sp_playlist *pl,
                            int position, void *userdata)
 {
-  printf("playlist_added callback.\n");
-  g_playlist_added = 1;
+  printf("playlist_added callback for %s.\n", sp_playlist_name(pl));
+  g_playlist_added = 1 ? g_container_loaded : 0;
 }
 
 static sp_playlistcontainer_callbacks pc_callbacks = {
@@ -287,7 +287,23 @@ void pandorify(sp_session *session, char *filename) {
 		g_playlist_added = 0;
 	  }
 	  else {
-		printf("Will make new track %s to playlist.\n", buff_const);
+		printf("Will make new track %s to playlist %s.\n", buff_const, sp_playlist_name(pl));
+		sp_link *link = sp_link_create_from_string(buff_const);
+		sp_track *track = sp_link_as_track(link);
+		int next_timeout2 = 0;
+		sp_error error;
+		while (error = sp_track_error(track) == SP_ERROR_IS_LOADING) {
+		  sp_session_process_events(session, &next_timeout2);
+		  printf("sleeping b/c playlist not ready.\n");
+		  usleep(next_timeout * 1000);
+		}
+		if (SP_ERROR_OK != error) {
+		  fprintf(stderr, "failed to load correct tracks: %s\n",
+				  sp_error_message(error));
+		}
+		else {
+		  sp_playlist_add_tracks(pl, &track, 1, 0, session);
+		}
 	  }
 	}
 }
