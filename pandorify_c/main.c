@@ -1,5 +1,5 @@
 #include "appkey.c"
-#include "mongo.h"
+// #include "mongo.h"
 
 #define USER_AGENT "pandorify"
 
@@ -21,12 +21,38 @@ static pthread_cond_t notify_cond;
 
 // How many times to loop to allow libspotify to process its own
 // fucking events.
-int num_wait_loops = 500000;
+int num_wait_loops = 1000000;
 
 int placeholders[50] = {0}; // List of placeholder indices
 int current_place_index = 0;
 
 char filename[256];
+
+void tracks_added(sp_playlist *pl, sp_track *const *tracks, int num_tracks, 
+				  int position, void *userdata)
+{
+  printf("tracks added\n");
+  pthread_mutex_lock(&notify_mutex);
+  pthread_cond_signal(&notify_cond);
+  pthread_mutex_unlock(&notify_mutex);
+}
+
+void playlist_update_in_progress(sp_playlist *pl, bool done, void *userdata)
+{
+  printf("(playlist updating)");
+  if (done)
+	{
+	  pthread_mutex_lock(&notify_mutex);
+	  pthread_cond_signal(&notify_cond);
+	  pthread_mutex_unlock(&notify_mutex);
+	  printf("(playlist done updating!)");
+	}
+}
+
+sp_playlist_callbacks playlist_callbacks = {
+  .tracks_added = tracks_added,
+  .playlist_update_in_progress = playlist_update_in_progress,
+};
 
 void list_playlists() {
   sp_playlistcontainer *pc = sp_session_playlistcontainer(g_session);
@@ -120,48 +146,12 @@ void clean_placeholders() {
  * all station playlists within. 
  */ 
 void pandorify_raw() {
-  sp_playlistcontainer *pc = sp_session_playlistcontainer(g_session);
+  printf("executing pandorify_raw.\n");
+  sp_playlistcontainer *pc;
+  while (!pc) pc = sp_session_playlistcontainer(g_session);
   int last_slot = sp_playlistcontainer_num_playlists(pc);
   sp_error error;
-  
-  // printf("Creating folder.\n");
-  // Create folder
-  /* error = sp_playlistcontainer_add_folder(pc, last_slot, "Pandorify"); */
-  /* if (SP_ERROR_OK != error) { */
-  /*   fprintf(stderr, "failed to create folder: %s\n", */
-  /* 	    sp_error_message(error)); */
-  /* } */
-  /* int pandorify_index = last_slot; */
-  /* int pandorify_end_index = last_slot+1; */
-
-  // Setup mongodb
-  /* mongo conn; */
-  /* mongo_cursor cursor; */
-  /* bson query; */
-  
-  /* mongo_init(&conn); */
-  /* if (mongo_connect(&conn, "127.0.0.1", 27017) != MONGO_OK) { */
-  /*   printf("mongo error\n"); */
-  /*   exit(1); */
-  /* } */
-  /* bson_init(&query); */
-  /* bson_append_int(&query, "has_uri", 1); */
-  /* bson_finish(&query); */
-
-  /* mongo_cursor_init(&cursor, &conn, "prod.songs"); */
-  /* // mongo_cursor_set_query(&cursor, &query); */
-  
-  /* while (mongo_cursor_next(&cursor) == MONGO_OK) { */
-  /*   bson_print(&cursor.current); */
-  /*   /\* bson_iterator iterator; *\/ */
-  /*   /\* if (bson_find(&iterator, mongo_cursor_bson(&cursor), "uri")) { *\/ */
-  /*   /\*   printf("name: %s\n", bson_iterator_string(&iterator)); *\/ */
-  /*   /\* } *\/ */
-  /* } */
-  
-  /* bson_destroy(&query); */
-  /* mongo_cursor_destroy(&cursor); */
-    
+      
   char buff[1024];
   int make_new_playlist = 0;
   // This is our playlist in between runs
@@ -175,51 +165,100 @@ void pandorify_raw() {
 
   while (fgets(&buff, 1024, fp))
     {
+	  printf("Cycle round.\n");
       int len = strnlen(buff, 1024);
       buff[len-1] = '\0';
       if (!strncmp(&buff, "---", 3))
-	{
-	  //delimiter -- new playlist to make
-	  make_new_playlist = 1;
-	}
+		{
+		  //delimiter -- new playlist to make
+		  make_new_playlist = 1;
+		  printf("Found playlist delimiter.\n");
+		}
       else if (make_new_playlist) 
-	{
-	  printf("Make a new playlist called: %s\n", buff);
-	  pl = sp_playlistcontainer_add_new_playlist(pc, buff);
-	  make_new_playlist = 0;
-	  if (pl)
-	    printf("Playlist created\n");
-	  else 
-	    printf("Playlist not created\n");
-	}
+		{
+		  printf("Make a new playlist called: %s\n", buff);
+		  pl = sp_playlistcontainer_add_new_playlist(pc, buff);
+		  make_new_playlist = 0;
+		    pthread_mutex_lock(&notify_mutex);
+		  if (pl)
+			printf("Playlist created\n");
+		  else 
+			printf("Playlist not created\n");
+		  pthread_cond_wait(&notify_cond, &notify_mutex);
+		  pthread_mutex_unlock(&notify_mutex);
+		  sp_playlist_add_callbacks(pl, &playlist_callbacks, NULL);
+		}
       else 
-	{
-	  printf("Make a new song in current playlist called: %s",
-		buff);
-	  sp_link *track_link = NULL;
-	  track_link = sp_link_create_from_string(buff);
-	  if (track_link == NULL || sp_link_type(track_link) != SP_LINKTYPE_TRACK)
-	    {
-	      printf("Not a valid track\n");
-	      continue;
-	    }
-	  sp_track *track = sp_link_as_track(track_link);
-	  if (track == NULL) {
-	    printf("invalid track is null\n");
-	    continue;
-	  }
-	  // while ((error = sp_track_error(track)) == SP_ERROR_IS_LOADING) usleep(100);
+		{
+		  printf("Make a new song in current playlist called: %s",
+				 buff);
+		  sp_link *track_link = NULL;
+		  track_link = sp_link_create_from_string(buff);
+		  if (track_link == NULL || sp_link_type(track_link) != SP_LINKTYPE_TRACK)
+			{
+			  printf("Not a valid track\n");
+			  continue;
+			}
+		  sp_track *track = sp_link_as_track(track_link);
+		  if (track == NULL) {
+			printf("invalid track is null\n");
+			continue;
+		  }
+		  while ((error = sp_track_error(track)) == SP_ERROR_IS_LOADING) usleep(100);
+		  if (SP_ERROR_OK != error) {
+		    fprintf(stderr, "failed to link track: %s\n",
+		  	    sp_error_message(error));
+		  }
+		  printf("track loaded successfully.\n");
+		  error = sp_playlist_add_tracks(pl, (const sp_track **) &track, 
+										 1, 0, g_session);
+		  if (SP_ERROR_OK != error) {
+			fprintf(stderr, "failed to add tracks: %s\n",
+					sp_error_message(error));
+		  }
+		  pthread_mutex_lock(&notify_mutex);
+		  pthread_cond_wait(&notify_cond, &notify_mutex);
+		  pthread_mutex_unlock(&notify_mutex);
+		  printf("Track added successfully.\n");
+		}
+	  // printf("Creating folder.\n");
+	  // Create folder
+	  /* error = sp_playlistcontainer_add_folder(pc, last_slot, "Pandorify"); */
 	  /* if (SP_ERROR_OK != error) { */
-	  /*   fprintf(stderr, "failed to link track: %s\n",  */
+	  /*   fprintf(stderr, "failed to create folder: %s\n", */
 	  /* 	    sp_error_message(error)); */
 	  /* } */
-	  error = sp_playlist_add_tracks(pl, (const sp_track **) &track, 
-					 1, 0, g_session);
-	  if (SP_ERROR_OK != error) {
-	    fprintf(stderr, "failed to add tracks: %s\n",
-	  	    sp_error_message(error));
-	  }
-	}
+	  /* int pandorify_index = last_slot; */
+	  /* int pandorify_end_index = last_slot+1; */
+	  
+	  // Setup mongodb
+	  /* mongo conn; */
+	  /* mongo_cursor cursor; */
+	  /* bson query; */
+	  
+	  /* mongo_init(&conn); */
+	  /* if (mongo_connect(&conn, "127.0.0.1", 27017) != MONGO_OK) { */
+	  /*   printf("mongo error\n"); */
+	  /*   exit(1); */
+	  /* } */
+	  /* bson_init(&query); */
+	  /* bson_append_int(&query, "has_uri", 1); */
+	  /* bson_finish(&query); */
+	  
+	  /* mongo_cursor_init(&cursor, &conn, "prod.songs"); */
+	  /* // mongo_cursor_set_query(&cursor, &query); */
+	  
+	  /* while (mongo_cursor_next(&cursor) == MONGO_OK) { */
+	  /*   bson_print(&cursor.current); */
+	  /*   /\* bson_iterator iterator; *\/ */
+	  /*   /\* if (bson_find(&iterator, mongo_cursor_bson(&cursor), "uri")) { *\/ */
+	  /*   /\*   printf("name: %s\n", bson_iterator_string(&iterator)); *\/ */
+	  /*   /\* } *\/ */
+	  /* } */
+	  
+	  /* bson_destroy(&query); */
+	  /* mongo_cursor_destroy(&cursor); */
+	  
     }
   
   // add playlist
@@ -229,7 +268,7 @@ void pandorify_raw() {
   /*   fprintf(stderr, "failed to add tracks: %s\n", */
   /* 	    sp_error_message(error)); */
   /* } */
-
+  
   // move into folder
   // int new_last = sp_playlistcontainer_num_playlists(pc);
   // printf("Adding to folder.\n");
@@ -239,7 +278,7 @@ void pandorify_raw() {
   /* 	    sp_error_message(error)); */
   /* } */
   
-    // mongo_destroy(&conn);
+  // mongo_destroy(&conn);
 }
 
 // Tells us our playlists are ready
@@ -375,6 +414,16 @@ int main(int argc, char **argv)
   
   strncpy(filename, argv[3], 256);
 
+  
+  //clean_placeholders();
+  printf("calling raw\n");
+  pandorify_raw();
+  finished = 1;
+  pthread_mutex_lock(&notify_mutex);
+  sp_error error = sp_session_logout(g_session);
+
+  return 0;
+
   pthread_mutex_lock(&notify_mutex);
   for (;;) {
     if (next_timeout == 0) {
@@ -402,22 +451,22 @@ int main(int argc, char **argv)
 
     // Do our thing
     if (!num_wait_loops && !finished) {
-      // pthread_mutex_unlock(&notify_mutex);
+      pthread_mutex_unlock(&notify_mutex);
       list_playlists();
       int i;
-      /* for (i = 0; i < 50; i++) { */
-      /* 	printf("index %d is %d.\n", i, placeholders[i]); */
-      /* } */
-      // clean_placeholders();
-      pthread_mutex_unlock(&notify_mutex);
+      for (i = 0; i < 50; i++) {
+      	printf("index %d is %d.\n", i, placeholders[i]);
+      }
+
+      //clean_placeholders();
+	  printf("calling raw\n");
       pandorify_raw();
       finished = 1;
-
+	  pthread_mutex_lock(&notify_mutex);
       sp_error error = sp_session_logout(g_session);
       // To reloop if needed 
       /* num_wait_loops = 1000000; */
       /* finished = 1; */
-      pthread_mutex_lock(&notify_mutex);
     }
     else {
       num_wait_loops--;

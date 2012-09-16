@@ -47,7 +47,7 @@ def run_spotify_tool(person, filename):
 	process = None
 	def target():
 		logging.info("Spotify process started")
-		process = subprocess.Popen(spotify_cmd, shell=True, stderr=PIPE)
+		process = subprocess.Popen(spotify_cmd, shell=True, stderr=subprocess.PIPE)
 		(stdout, stderr) = process.communicate()
 		logging.info("Spotify process finished")
 		logging.debug(stderr)
@@ -55,12 +55,13 @@ def run_spotify_tool(person, filename):
 	thread = threading.Thread(target=target)
 	thread.start()
 	
-	thread.join(15)
+	thread.join(10000)
 	if thread.is_alive():
 		logging.info("Spotify hung, restarting")
 		process.terminate()
 		thread.join()
-	return False
+		return False
+	return True
 
 class ThreadCrawler(threading.Thread):
 	def __init__(self, queue):
