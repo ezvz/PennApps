@@ -14,11 +14,11 @@
 #include <strings.h>
 
 sp_session *g_session;
-
 char filename[256];
-
-int track_updated = 0;
-int playlist_updated = 0;
+// Instead of mutex's we just busy-wait
+int g_track_updated = 0;
+int g_playlist_updated = 0;
+int g_logged_in = 0;
 
 void tracks_added(sp_playlist *pl, sp_track *const *tracks, int num_tracks, 
 				  int position, void *userdata)
@@ -45,7 +45,12 @@ static void connection_error(sp_session *session, sp_error error)
 
 static void logged_in(sp_session *session, sp_error error)
 {
-  printf("Logged in success!\n");
+    printf("In login.\n");
+    if (error != SP_ERROR_OK) {
+        fprintf(stderr, "Error: unable to log in: %s\n", sp_error_message(error));
+        exit(1);
+    }
+    printf("Logged in success!\n");
 }
 
 static void logged_out(sp_session *session)
@@ -63,25 +68,26 @@ static void log_message(sp_session *session, const char *data)
   fprintf(stderr,"%s",data);
 }
 
-void notify_main_thread(sp_session *session)
+static void notify_main_thread(sp_session *session)
 {
   printf("main thread notified.\n");
 }
 
 static sp_session_callbacks callbacks = {
-  &logged_in,
-  &logged_out,
-  NULL,
-  &connection_error,
-  NULL,
-  &notify_main_thread,
-  NULL,
-  NULL,
-  &log_message
+  .logged_in = &logged_in,
+  .logged_out = &logged_out,
+  .notify_main_thread = &notify_main_thread,
+  .log_message = &log_message,
 };
 
 static sp_session_config config = {
-  .api_version = SPOTIFY_API_VERSION;
+    .api_version = SPOTIFY_API_VERSION,
+    .cache_location = "tmp",
+    .settings_location = "tmp",
+    .application_key = g_appkey,
+    .application_key_size = g_appkey_size,
+    .user_agent = USER_AGENT,
+    .callbacks = &callbacks,
 };
 
 void list_playlists() {
@@ -207,4 +213,26 @@ void pandorify_raw() {
 		  printf("Track added successfully.\n");
 		}
 	}
+}
+
+int main(int argc, char *argv[])
+{
+    sp_error error;
+    sp_session *session;
+    
+    config.application_key_size = g_appkey_size;
+    error = sp_session_create(&config, &session);
+    if (error != SP_ERROR_OK) {
+        fprintf(stderr, "Error: unable to create spotify session: %s\n", sp_error_message(error));
+        return 1;
+    }
+    int next_timeout = 0;
+    g_logged_in = 0;
+    sp_session_login(session, username, password, 0, NULL);
+    while (!g_logged_in) {
+        sp_session_process_events(session, &next_timeout);
+        usleep(next_timeout * 1000);
+    }
+
+    return 0;
 }
