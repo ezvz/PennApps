@@ -183,3 +183,52 @@ INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:06:03] "GET /static/js/jquery.valida
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:06:03] "GET /static/js/jquery.validation.functions.js HTTP/1.1" 304 -
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:06:03] "GET /static/img/loading43.gif HTTP/1.1" 304 -
 INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:06:03] "GET /static/img/favicon.ico HTTP/1.1" 304 -
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:25:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:25:56] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:25:56] "GET /static/images/light-blue/background-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:25:56] "GET /static/images/light-blue/header-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:25:56] "GET /static/images/light-blue/icons.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:25:56] "GET /static/images/light-blue/footer-texture-top.png HTTP/1.1" 404 -
+INFO:root:POST recieved
+INFO:root:added to queue
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:26:15] "POST / HTTP/1.1" 200 -
+INFO:root:Processing new person wellecks@gmail.com
+DEBUG:root:Calling Ruby script
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:26:15] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=For+An+Angel+%282009%29 HTTP/1.1" 200 18827
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Century HTTP/1.1" 200 57800
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=Mary+Jane%27s+Last+Dance HTTP/1.1" 200 33956
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): ws.spotify.com
+DEBUG:requests.packages.urllib3.connectionpool:"GET /search/1/track.json?q=House+Burning+Down HTTP/1.1" 200 76348
+DEBUG:root:Calling spotify tools
+INFO:root:Spotify process started
+INFO:root:Spotify process finished
+DEBUG:root:/bin/sh: ./pandorify: No such file or directory
+
+INFO:root:Finished processing person
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:57:45] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:57:45] "GET /static/images/light-blue/background-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:57:45] "GET /static/images/light-blue/header-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:57:45] "GET /static/images/light-blue/icons.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 11:57:45] "GET /static/images/light-blue/footer-texture-top.png HTTP/1.1" 404 -
+DEBUG:root:Started thread
+INFO:werkzeug: * Running on http://0.0.0.0:5000/
+INFO:werkzeug: * Restarting with reloader
+DEBUG:root:Started thread
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/js/custom.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/background-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/header-texture.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/icons.png HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Sep/2012 13:19:27] "GET /static/images/light-blue/footer-texture-top.png HTTP/1.1" 404 -
