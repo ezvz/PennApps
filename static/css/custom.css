@@ -1,5 +1,5 @@
 ﻿#header{
-    margin-top: -110px;
+    margin-top: -50px;
 }
 
 h1{
@@ -8,7 +8,7 @@ h1{
 	padding-top: 40px;
 	font-size:80px;
 	color:#FFFFF0;
-	margin-left: 330px;
+	margin-left: 360px;
 	margin-top:25px;
 }
 
@@ -25,16 +25,32 @@ h1{
 	margin-left: 400px;
 }
 
+#msg{
+	font-family: 'Lobster Two', cursive;
+	font-size: 30px;
+	color: black;
+}
+
 .modal {
-    display:    block;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
+    display:    none;
+    top:        400px;
+    left:       650px;
+    height:     350px;
+    width:      400px;
     background: rgba( 255, 255, 255, .8 ) 
                 url('../img/loading43.gif') 
+                50% 50% 
+                no-repeat;
+}
+.modal2 {
+    display:    none;
+    position:   absolute;
+    top:        600;
+    left:       550;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, .4 ) 
+                url('../img/loading43.gif')
                 50% 50% 
                 no-repeat;
 }

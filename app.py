@@ -19,6 +19,26 @@ db = connection['prod']
 # Run Ruby Process here on next
 #sendEmail(next.user_email, next.p_uname)
 
+import Queue, threading
+queue = Queue.Queue()
+
+class ThreadCrawler(threading.Thread):
+	def __init__(self, queue):
+		threading.Thread.__init__(self)
+		self.queue = queue
+		
+	def run(self):
+		while True:
+			person = self.queue.get()
+			pandora_user = person['p_uname']
+			email = person['user_email']
+			call(["ruby", "watir.rb", person['p_uname'], person['p_pword']])
+			songs = get_ruby_songs(pandora_user)
+			format_songs(songs, email)
+			sendEmail(email, pandora_user)
+
+			self.queue.task_done()
+			
 @app.route('/', methods=['POST', 'GET'])
 def route_root():
 	saved = ''
@@ -39,18 +59,10 @@ def route_root():
 					"p_uname": pandora_user,
 					"p_pword": pandora_pass,
 					"user_email": email }
-		ppl = db.people
-		ppl.insert(person)
+		queue.put(person)
 
 		saved = 'Your playlists are ready!'
-		call(["ruby", "watir.rb", pandora_user, pandora_pass])
-		songs = get_ruby_songs(pandora_user)
-		format_songs(songs, email)
-		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)
-		#songs, err = out.communicate()
-		#processQueue.put(p)
-		#manageQueue()
-		sendEmail(email, pandora_user)
+
 	return render_template('index.html', saved=saved)
 
 def sendEmail(email, pandora_user):
@@ -163,9 +175,13 @@ def list_person_entries():
     for p in ppl:
     	content += 'Pandora Username:'+ p['p_uname']
 
-	return content
+    return content
 
 if __name__ == '__main__':
-    # Bind to PORT if defined, otherwise default to 5000.
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+	# Bind to PORT if defined, otherwise default to 5000.
+	t = ThreadCrawler(queue)
+	t.setDaemon(True)
+	t.start()
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port)
+	queue.join()
