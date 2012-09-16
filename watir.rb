@@ -2,43 +2,91 @@ require 'rubygems'
 require 'watir-webdriver'
 require 'nokogiri'
 require 'headless'
+require 'mongo'
 
-headless = Headless.new
-headless.start
+def add_to_mongo(hash)
+	puts "Adding to database..."
+	@conn = Mongo::Connection.new
+	@db   = @conn['pandorify']
+	@coll = @db['Song']
+	index = @coll.count + 1
 
-browser = Watir::Browser.new(:chrome)
-browser.goto("http://www.pandora.com/account/sign-in")
+	hash.each_pair do |key, value|
+		@coll.insert({index.to_s => key + "~" + value[0] + "~" + value[1] + "~" + value[2]})
+		index = index + 1
+	end
+end
 
-#form["login_username"] = "pennapps@team.com"
-#form["login_password"] = "password"
+def login_to_pandora(username, password)
+	browser = Watir::Browser.start "http://www.pandora.com/account/sign-in"
+	puts "Login page reached. Logging in..."
+	browser.text_field(:name => 'email').when_present.set(username)
+	browser.text_field(:name => 'password').when_present.set(password)
+	browser.button(:value, 'Sign in').click
+	puts "Login successful. Navigating to likes page..."
+	return browser
+end
 
-browser.text_field(:name => 'email').when_present.set("pennapps@team.com")
+def goto_likes(browser)
+	browser.goto 'http://www.pandora.com/profile/likes/pennapps'
+	browser.wait_until {browser.div(:id, "track_like_pages").exists? }
+	puts "Likes page reached."
+	return browser
+end
 
-browser.text_field(:name => 'password').when_present.set("password")
+def expand_likes(browser)
+	puts "Processing list..."
+	counter = 0
+	while(!browser.div(:class, "no_more tracklike").exists?)
+		show_more = browser.div(:class => "show_more", :index => counter)
+		if show_more.visible?
+			show_more.fire_event("onclick")
+		end
+		counter = counter + 1
+		sleep 1
+	end
+	return browser
+end
 
-browser.button(:value, 'Sign in').click
+def xpath_to_array(html, xp)
+	out = []
+	html.xpath(xp).each do |obj|
+		out.push(obj.text)
+	end
+	return out
+end
 
+def parse_likes(browser, username)
+	puts "Scraping songs..."
+	page_html = Nokogiri::HTML.parse(browser.html)
 
+	name_xpath = '//*[contains(concat( " ", @class, " " ), concat( " ", "first", " " ))]'
+	station_xpath = '//*[contains(concat( " ", @class, " " ), concat( " ", "like_context_stationname", " " ))]';
+	artist_xpath = '//p//a[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]'
 
-browser.goto 'http://www.pandora.com/profile/likes/pennapps'
+	songs = {}
+	names = xpath_to_array(page_html, name_xpath)
+	stations = xpath_to_array(page_html, station_xpath)
+	artists = xpath_to_array(page_html, artist_xpath)
+	names.each_with_index {|k,i| songs[k] = [artists[i], stations[i], username]}
+	
+	puts songs.keys.size.to_s + " songs found: "
+	puts songs
+	return songs
+end
 
-browser.wait_until {browser.div(:id, "track_like_pages").exists? }
+def scrape_pandora(username, password)
+	headless = Headless.new
+	headless.start
 
-page_html = Nokogiri::HTML.parse(browser.html)
+	browser = login_to_pandora(username, password)
+	browser = goto_likes(browser)
+	browser = expand_likes(browser)
+	songs = parse_likes(browser, username)
+	add_to_mongo(songs)
 
-xpath = '//*[contains(concat( " ", @class, " " ), concat( " ", "first", " " ))]'
-puts page_html.xpath(xpath).inner_text
+	headless.destroy
+	puts "Done!"
+end
 
-#browser.div(:class, "show_more").fireEvent("onmousedown")
-
-browser.div(:class, "show_more").fire_event("onclick")
-
-page_html = Nokogiri::HTML.parse(browser.html)
-
-xpath = '//*[contains(concat( " ", @class, " " ), concat( " ", "first", " " ))]'
-puts page_html.xpath(xpath).inner_text
-headless.destroy
-
-#basta@mozilla.com
-
-	#browser.text_field(:id => 'login_password').when_present.set("password")
+scrape_pandora("pennapps@team.com", "password")

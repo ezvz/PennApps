@@ -1,2 +1,5 @@
 venv
-*.pycpandorify.pem
+*.pyc
+pandorify.pem
+[#]*[#]
+*.o
