@@ -30,8 +30,11 @@ def login_to_pandora(username, password)
 end
 
 def goto_likes(browser)
-	browser.goto 'http://www.pandora.com/profile/likes/pennapps'
-	browser.wait_until {browser.div(:id, "track_like_pages").exists? }
+	browser.wait_until { browser.div(:class, "myprofile_icon").exists? }
+	browser.div(:class, "myprofile_icon").fire_event("onclick")
+	browser.wait_until { browser.link(:id, "profile_tab_likes").exists? }
+	browser.link(:id, "profile_tab_likes").click
+	browser.wait_until { browser.div(:id, "track_like_pages").exists? }
 	puts "Likes page reached."
 	return browser
 end
