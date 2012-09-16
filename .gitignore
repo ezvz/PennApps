@@ -4,4 +4,8 @@ pandorify.pem
 [#]*[#]
 *.o
 somethingelsethistime.pem
+<<<<<<< HEAD
 libspotify-*
+=======
+tmp/*
+>>>>>>> milestone on the branch
