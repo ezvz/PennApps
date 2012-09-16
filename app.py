@@ -76,10 +76,12 @@ class ThreadCrawler(threading.Thread):
 			email = person['user_email']
 			logging.debug("Calling Ruby script")
 			try: 
-				subprocess.check_call("ruby", "watir.rb", person['p_uname'], person['p_pword'])
-			except CalledProcessError: 
+				subprocess.check_call(["ruby", "watir.rb", person['p_uname'], person['p_pword']])
+			except subprocess.CalledProcessError: 
+				logging.error("Watir failed to scrape")
 				refresh_tables()
 				self.queue.task_done()
+				return
 			songs = get_ruby_songs(pandora_user)
 			format_songs(songs, email)
 			logging.debug("Calling spotify tools")

@@ -30,6 +30,7 @@ def login_to_pandora(username, password)
 		browser.wait_until(10) { browser.div(:class, "myprofile_icon").exists? }
 	rescue TimeoutError
 		return 1
+    end
 	return browser
 end
 
@@ -92,6 +93,7 @@ def scrape_pandora(username, password)
 	browser = login_to_pandora(username, password)
 	if(browser==1)
 		return 1
+    end
 	browser = goto_likes(browser)
 	browser = expand_likes(browser)
 	songs = parse_likes(browser, username)
