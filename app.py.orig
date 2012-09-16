@@ -1,6 +1,6 @@
 import os
 import subprocess
-import sendgrid
+#import sendgrid
 import Queue
 from getUri import *
 from flask import Flask, render_template, request
@@ -43,16 +43,19 @@ def route_root():
 		ppl = db.people
 		ppl.insert(person)
 
-		saved = 'Your playlists are ready!'
-		call(["ruby", "watir.rb", pandora_user, pandora_pass])
+		saved = 'Thanks, we are processing your info and will email you when your playlist is ready!'
+		flag = call(["ruby", "watir.rb", pandora_user, pandora_pass])
 		songs = get_ruby_songs(pandora_user)
 		format_songs(songs, email)
+		if flag == 0:
+			error = "Failed to login to Pandora."
 		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)
 		#songs, err = out.communicate()
 		#processQueue.put(p)
 		#manageQueue()
+<<<<<<< HEAD
 		sendEmail(email, pandora_user)
-	return render_template('index.html', saved=saved)
+	return render_template('index.html', saved=saved, songs=songs, error=error)
 
 def sendEmail(email, pandora_user):
 	slist = get_songs_by_user(email)
@@ -60,11 +63,9 @@ def sendEmail(email, pandora_user):
 	songs = []
 	songsValid = []
 	playlistName = []
-	uri = []
 	for elem in slist:
 		songInfo = elem.split("~")
 		songs.append(songInfo[0])
-		uri.append(songInfo[3])
 		if songInfo[2] == 1:
 			songsValid.append(1)
 		else:
@@ -74,8 +75,8 @@ def sendEmail(email, pandora_user):
 			playlists.append(songInfo[1]) #CHECK INDEX FOR PLAYLIST
 
 	s = sendgrid.Sendgrid('varantz', 'sendPass123', secure=True)
-	#message = sendgrid.Message("notifications@pandorify.us", "Pandorify!", "", ("<b>Your playlist" + plural(playlists) + " ready!</b> <br />" + getBody(["Test PL 1", "Test PL 2"], ["song1","song2","song3","song4" ], [1,1,1,1], ["Test PL 1", "Test PL 2", "Test PL 1", "Test PL 2"], ["a","b","gg","aa"])))
-	message = sendgrid.Message("notifications@pandorify.us", "Pandorify!", "", ("<b>Your playlist" + plural(playlists) + " ready!</b> " + getBody(playlists, songs, songsValid, playlistName, uri)))
+	#message = sendgrid.Message("notifications@pandorify.us", "Pandorify!", "", ("<b>Your playlist" + plural(playlists) + " ready!</b> <br />" + getBody(["Test PL 1", "Test PL 2"], ["song1","song2","song3","song4" ], [1,1,1,1], ["Test PL 1", "Test PL 2", "Test PL 1", "Test PL 2"])))
+	message = sendgrid.Message("notifications@pandorify.us", "Pandorify!", "", ("<b>Your playlist" + plural(playlists) + " ready!</b> " + getBody(playlists, songs, songsValid, playlistName)))
 	message.add_to(email, pandora_user)
 
 	s.web.send(message)
@@ -87,7 +88,7 @@ def plural(playlists):
 	else:
 		return " is "
 
-def getBody(playlists, songs, songsValid, playlistName, uri):
+def getBody(playlists, songs, songsValid, playlistName):
 	toRet = ""
 	for pl in playlists:
 		toRet = toRet + "<p>" + "Songs added from " + pl + ":" + "<br /> "
@@ -95,7 +96,7 @@ def getBody(playlists, songs, songsValid, playlistName, uri):
 		for i in range(len(songs)):
 			if songsValid[i] == 1:
 				if playlistName[i] == pl:
-					toRet = toRet + "	" + songs[i] + " - " + uri[i] +   "<br />"
+					toRet = toRet + "	" + songs[i] +  "<br />"
 		toRet = toRet + "</ol>"
 		temp =  "<br />"   + "Songs not found on Spotify from " + pl + ":" + "<br />" + "<ol>"
 		temp2 = ""
@@ -108,6 +109,29 @@ def getBody(playlists, songs, songsValid, playlistName, uri):
 		toRet = toRet + "<br />" + "</p>"
 	return toRet
 
+=======
+	return render_template('index.html', saved=saved, songs=songs, error=error)
+
+def sendEmail(email, pandora_user):
+	#p = Person.query.filter(Person.user_email==email).first()
+	#songs = []
+	#songsValid = []
+	#songsInvalid = []
+	#for elem in p.songs:
+	#	songInfo = elem.split("~")
+	#	if getUri(songInfo[0],songInfo[1]) == None:
+	#		songsInvalid.append(songInfo[0])
+	#	else:
+	#		songsValid.append(songInfo[0])
+	#s = sendgrid.Sendgrid('varantz', 'sendPass123', secure=True)
+	#message = sendgrid.Message("vzanoyan@gmail.com", "Pandorify!", "", "<b>Your playlist is ready!</b>")
+	#message.add_to(email, pandora_user)
+
+	#s.web.send(message)
+
+	return
+
+>>>>>>> 252b2adcbbef5892285467b20eff685eb62def8a
 @app.route('/entries')
 def route_entries():
 	return render_template('entries.html', content=list_person_entries())
@@ -154,8 +178,13 @@ def get_songtable():
 
 def get_songs_by_user(email):
 	lst = []
+<<<<<<< HEAD
 	for song in db.songs.find({"email": email}):
-		lst.append(str(song['title']) + "~"  + str(song['station']) + "~" + str(song['has_uri']) + "~" + str(song['uri']))
+		lst.append(song['title'] + "~"  + "~" + song['station'] + "~" + song['has_uri'])
+=======
+	for song in db.songs.find({"email": "asdf"}):
+		lst.append(song['title'] + "~" + song['artist'] + "~" + song['station'] + "~" + song['email'])
+>>>>>>> 252b2adcbbef5892285467b20eff685eb62def8a
 	return lst
 
 def list_person_entries():
