@@ -62,7 +62,7 @@ def route_root():
 					"user_email": email }
 		queue.put(person)
 
-		saved = 'Your playlists are ready!'
+		saved = "Your Spotify playlists are getting Pandorify'd!"
 
 	return render_template('index.html', saved=saved)
 
