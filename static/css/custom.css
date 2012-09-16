@@ -59,3 +59,9 @@ h1{
                 50% 50% 
                 no-repeat;
 }
+
+.icon_img{
+    padding-top: 4px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
