@@ -110,28 +110,28 @@ static sp_session_config config = {
     .application_key_size = 0,
     .user_agent = USER_AGENT,
     .callbacks = &callbacks,
+	NULL,
 };
 
 void list_playlists(sp_session *session) {
+  config.application_key_size = g_appkey_size;
   sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
   int next_timeout = 0;
   printf("waiting for container to load.\n");
-
+  
   while (!g_container_loaded) 
 	{
 	  sp_session_process_events(session, &next_timeout);
 	  printf("sleeping\n");
 	  usleep(next_timeout * 1000);
 	}
+  printf("container successfully loaded.\n");
   g_container_loaded = 0;
   int i, j, level = 0;
   sp_playlist *pl;
   char name[200];
   int new = 0;
   
-  printf("container successfully loaded.\n");
-
-  if (!pc) return;
   printf("%d playlists available\n", sp_playlistcontainer_num_playlists(pc));
 
   for (i = 0; i < sp_playlistcontainer_num_playlists(pc); ++i) {
