@@ -10,11 +10,11 @@ def add_to_mongo(hash)
 	puts "Adding to database..."
 	@conn = Mongo::Connection.new
 	@db   = @conn['prod']
-	@coll = @db['Song']
+	@coll = @db['rubysongs']
 	index = @coll.count + 1
 
 	hash.each_pair do |key, value|
-		@coll.insert({index.to_s => key + "~" + value[0] + "~" + value[1] + "~" + value[2]})
+		@coll.insert({"info" => key + "~" + value[0] + "~" + value[1] + "~" + value[2]})
 		index = index + 1
 	end
 end
@@ -93,8 +93,3 @@ def scrape_pandora(username, password)
 end
 
 output = scrape_pandora(ARGV[0], ARGV[1])
-
-url = URI.parse('http://0.0.0.0:5000/done')
-postData = Net::HTTP.post_form(url, {'songs'=> output.to_s})
-
-puts postData.body

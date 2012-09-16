@@ -2,7 +2,7 @@ import os
 import subprocess
 #import sendgrid
 import Queue
-#from getUri import *
+from getUri import *
 from flask import Flask, render_template, request
 from flaskext.mongoalchemy import MongoAlchemy
 from pymongo import Connection
@@ -24,6 +24,7 @@ db = connection['prod']
 def route_root():
 	saved = ''
 	songs = ''
+	error = ''
 	if request.method == 'POST':
 		#if request.form['songs']:
 		#	return request.form['songs']
@@ -43,12 +44,16 @@ def route_root():
 		ppl.insert(person)
 
 		saved = 'Thanks, we are processing your info and will email you when your playlist is ready!'
-		#songs = subprocess.check_output(["ruby", "watir.rb", pandora_user, pandora_pass])
+		flag = call(["ruby", "watir.rb", pandora_user, pandora_pass])
+		songs = get_ruby_songs(pandora_user)
+		format_songs(songs)
+		if flag == 0:
+			error = "Failed to login to Pandora."
 		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)
 		#songs, err = out.communicate()
 		#processQueue.put(p)
 		#manageQueue()
-	return render_template('index.html', saved=saved, songs=songs)
+	return render_template('index.html', saved=saved, songs=songs, error=error)
 
 def sendEmail(email, pandora_user):
 	#p = Person.query.filter(Person.user_email==email).first()
@@ -82,7 +87,38 @@ def about():
 
 @app.route('/done')
 def about():
-	return request.form['songs']
+	return ""
+
+def get_ruby_songs(u_name):
+	lst = []
+	for song in db.rubysongs.find():
+		lst.append(song['info'])
+
+	return lst
+
+def format_songs(songs):
+	spl = []
+	for song in songs:
+		spl = song.split('~')
+		print spl
+		uri = getUri(spl[0],spl[1])
+		if uri != None:	
+			song = {"title": spl[0],
+					"artist": spl[1],
+					"station": spl[2],
+					"uri": uri,
+					"has_uri": 1}
+		else:
+			song = {"title": spl[0],
+					"artist": spl[1],
+					"station": spl[2],
+					"uri": "",
+					"has_uri": 0}
+		songtable = db.songs
+		songtable.insert(song)
+
+def get_songtable():
+	return db.songtable.find()
 
 
 def list_person_entries():
