@@ -46,7 +46,7 @@ def route_root():
 		saved = 'Thanks, we are processing your info and will email you when your playlist is ready!'
 		flag = call(["ruby", "watir.rb", pandora_user, pandora_pass])
 		songs = get_ruby_songs(pandora_user)
-		format_songs(songs)
+		format_songs(songs, email)
 		if flag == 0:
 			error = "Failed to login to Pandora."
 		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)
@@ -72,10 +72,7 @@ def sendEmail(email, pandora_user):
 
 	#s.web.send(message)
 
-	
 	return
-
-
 
 @app.route('/entries')
 def route_entries():
@@ -96,7 +93,7 @@ def get_ruby_songs(u_name):
 
 	return lst
 
-def format_songs(songs):
+def format_songs(songs, email):
 	spl = []
 	for song in songs:
 		spl = song.split('~')
@@ -106,20 +103,26 @@ def format_songs(songs):
 			song = {"title": spl[0],
 					"artist": spl[1],
 					"station": spl[2],
+					"email": email,
 					"uri": uri,
 					"has_uri": 1}
 		else:
 			song = {"title": spl[0],
 					"artist": spl[1],
 					"station": spl[2],
+					"email": email,
 					"uri": "",
 					"has_uri": 0}
-		songtable = db.songs
-		songtable.insert(song)
+		db.songs.insert(song)
 
 def get_songtable():
-	return db.songtable.find()
+	return db.songs.find()
 
+def get_songs_by_user(email):
+	lst = []
+	for song in db.songs.find({"email": "asdf"}):
+		lst.append(song['title'] + "~" + song['artist'] + "~" + song['station'] + "~" + song['email'])
+	return lst
 
 def list_person_entries():
     content = ''
