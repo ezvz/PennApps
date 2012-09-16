@@ -114,7 +114,7 @@ void list_playlists(sp_session *session) {
   while (!g_container_loaded) 
 	{
 	  sp_session_process_events(session, &next_timeout);
-	  printf("sleeping\n");
+	  printf("sleeping b/c container not loaded yet.\n");
 	  usleep(next_timeout * 1000);
 	}
   int i, j, level = 0;
@@ -238,12 +238,46 @@ void list_playlists(sp_session *session) {
 /* 	} */
 /* } */
 
+void pandorify(sp_session *session, char *filename) {
+  printf("Pandorify'ing.\n");
+  sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
+  int next_timeout = 0;
+  while (!g_container_loaded) 
+	{
+	  sp_session_process_events(session, &next_timeout);
+	  printf("sleeping b/c container not loaded yet.\n");
+	  usleep(next_timeout * 1000);
+	}
+  printf("%d playlists available.\n", sp_playlistcontainer_num_playlists(pc));
+  
+  // The real shit
+  char buff[512];
+  char *buff_const;
+  FILE *fp = fopen(filename, "r");
+  while (buff_const = fgets(&buff, 512, fp))
+	{
+	  if (!buff_const) { 
+		printf("Error reading file.\n");
+		break; 
+	  }
+	  printf(buff_const);
+	  /* sp_session_process_events(session, &next_timeout); */
+	  /* printf("sleeping b/c no reason.\n"); */
+	  /* usleep(next_timeout * 1000); */
+	}
+}
+
 int main(int argc, char *argv[])
 {
     sp_error error;
     sp_session *session;
+	if (argc < 4) {
+	  printf("Not enough arguments.\n");
+	  exit(1);
+	}
 	char *username = argv[1];
 	char *password = argv[2];
+	char *filename = argv[3];
     config.application_key_size = g_appkey_size;
     error = sp_session_create(&config, &session);
     if (error != SP_ERROR_OK) {
@@ -255,9 +289,15 @@ int main(int argc, char *argv[])
     sp_session_login(session, username, password, 0, NULL);
     while (!g_logged_in) {
         sp_session_process_events(session, &next_timeout);
-		printf("sleeping\n");
+		printf("sleeping b/c not logged in yet.\n");
         usleep(next_timeout * 1000);
     }
-	list_playlists(session);
+	// list_playlists(session);
+	pandorify(session, filename);
+	error = sp_session_logout(session);
+	if (error != SP_ERROR_OK) {
+        fprintf(stderr, "Error: unable to logout spotify session: %s\n", sp_error_message(error));
+        return 1;
+    }
     return 0;
 }
