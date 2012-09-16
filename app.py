@@ -31,8 +31,9 @@ class ThreadCrawler(threading.Thread):
 	def run(self):
 		while True:
 			person = self.queue.get()
-			
-			call(["ruby", "watir.rb", pandora_user, pandora_pass])
+			pandora_user = person['p_uname']
+			email = person['user_email']
+			call(["ruby", "watir.rb", person['p_uname'], person['p_pword']])
 			songs = get_ruby_songs(pandora_user)
 			format_songs(songs, email)
 			sendEmail(email, pandora_user)
