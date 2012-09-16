@@ -1,13 +1,22 @@
-.modal {
-    display:    block;
-    position:   fixed;
-    z-index:    1000;
-    top:        0;
-    left:       0;
-    height:     100%;
-    width:      100%;
-    background: rgba( 255, 255, 255, .8 ) 
-                url('http://i.stack.imgur.com/FhHRx.gif') 
-                50% 50% 
-                no-repeat;
+﻿#header{
+    margin-top: -110px;
+}
+
+h1{
+	font-family: 'Spirax', cursive;
+	font-family: 'Lobster Two', cursive;
+	padding-top: 40px;
+	font-size:80px;
+	color:#FFFFF0;
+	margin-left: 330px;
+	margin-top:25px;
+}
+
+.form-horizontal{
+	width: 390px;
+	margin-left: 240px;
+}
+
+.button{
+	margin-left:170px;
 }
