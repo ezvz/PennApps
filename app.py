@@ -44,7 +44,7 @@ def route_root():
 		ppl.insert(person)
 
 		saved = 'Your playlists are ready!'
-		call(["ruby", "watir.rb", pandora_user, pandora_pass])
+		#call(["ruby", "watir.rb", pandora_user, pandora_pass])
 		songs = get_ruby_songs(pandora_user)
 		format_songs(songs, email)
 		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)

@@ -1,8 +1,7 @@
-$("body").on({
-    ajaxStart: function() { 
-        $(this).addClass("loading"); 
-    },
-    ajaxStop: function() { 
-        $(this).removeClass("loading"); 
-    }    
+$(document).ready(function(){
+	$('#submit').click(function() {
+		$('.modal2').show();
+    });
+
+    
 });
