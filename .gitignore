@@ -2,4 +2,4 @@ venv
 *.pyc
 pandorify.pem
 [#]*[#]
-
+*.o
