@@ -3,6 +3,7 @@
 
 #define USER_AGENT "pandorify"
 
+#include <assert.h>
 #include <pthread.h>
 #include <sys/time.h>
 #include <libgen.h>
@@ -17,7 +18,7 @@ sp_session *g_session;
 char filename[256];
 // Instead of mutex's we just busy-wait
 int g_track_updated = 0;
-int g_playlist_updated = 0;
+int g_playlist_added = 0;
 int g_logged_in = 0;
 int g_container_loaded = 0;
 
@@ -28,15 +29,8 @@ void tracks_added(sp_playlist *pl, sp_track *const *tracks, int num_tracks,
   g_track_updated = 1;
 }
 
-void playlist_update_in_progress(sp_playlist *pl, bool done, void *userdata)
-{
-  printf("(playlist updating)");
-  g_playlist_updated = 1;
-}
-
 sp_playlist_callbacks playlist_callbacks = {
   .tracks_added = tracks_added,
-  .playlist_update_in_progress = playlist_update_in_progress,
 };
 
 // Playlist container callbacks
@@ -47,7 +41,15 @@ static void container_loaded(sp_playlistcontainer *pc, void *userdata)
   g_container_loaded = 1;
 }
 
+static void playlist_added(sp_playlistcontainer *pc, sp_playlist *pl,
+                           int position, void *userdata)
+{
+  printf("playlist_added callback.\n");
+  g_playlist_added = 1;
+}
+
 static sp_playlistcontainer_callbacks pc_callbacks = {
+  .playlist_added = &playlist_added,
   .container_loaded = &container_loaded,
 };
 
@@ -254,16 +256,39 @@ void pandorify(sp_session *session, char *filename) {
   char buff[512];
   char *buff_const;
   FILE *fp = fopen(filename, "r");
+  int make_new_playlist = 0;
+  sp_playlist *pl = NULL;
+
   while (buff_const = fgets(&buff, 512, fp))
 	{
 	  if (!buff_const) { 
 		printf("Error reading file.\n");
 		break; 
 	  }
-	  printf(buff_const);
-	  /* sp_session_process_events(session, &next_timeout); */
-	  /* printf("sleeping b/c no reason.\n"); */
-	  /* usleep(next_timeout * 1000); */
+	  assert (buff_const == &buff);
+
+	  int len = strnlen(buff_const, 512);
+	  buff[len-1] = '\0';
+
+	  if (!strncmp(buff_const, "---", 3)) {
+		make_new_playlist = 1;
+	  }
+	  else if (make_new_playlist) {
+		make_new_playlist = 0;
+		printf("Will make a new playlist here called %s.\n", buff_const);
+		pl = sp_playlistcontainer_add_new_playlist(pc, buff_const);
+
+		while (!g_playlist_added) {
+		  sp_session_process_events(session, &next_timeout);
+		  printf("sleeping b/c playlist not ready.\n");
+		  usleep(next_timeout * 1000);
+		}
+		// We are done waiting
+		g_playlist_added = 0;
+	  }
+	  else {
+		printf("Will make new track %s to playlist.\n", buff_const);
+	  }
 	}
 }
 
