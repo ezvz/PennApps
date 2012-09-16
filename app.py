@@ -5,84 +5,108 @@ import Queue
 from getUri import *
 from flask import Flask, render_template, request
 from flaskext.mongoalchemy import MongoAlchemy
+from pymongo import Connection
+from subprocess import call
 
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-app.config['MONGOALCHEMY_DATABASE'] = 'pandorify'
-db = MongoAlchemy(app)
+#app.config['MONGOALCHEMY_DATABASE'] = 'prod'
+#db = MongoAlchemy(app)
 
-processQueue = Queue()
+connection = Connection('localhost', 27017)
+db = connection['prod']
 
-def manageQueue:
-	next = processQueue.get()
-	# Run Ruby Process here on next
-	sendEmail(next.user_email, next.p_uname)
-	if processQueue.empty():
-		return False
-
-
-
-
-
-
-
-
-class Person(db.Document):
-	s_uname = db.StringField()
-	s_pword = db.StringField()
-	p_uname = db.StringField()
-	p_pword = db.StringField()
-	user_email = db.StringField()
-	songs = db.ListField(db.StringField())
-
+# Run Ruby Process here on next
+#sendEmail(next.user_email, next.p_uname)
 
 @app.route('/', methods=['POST', 'GET'])
 def route_root():
 	saved = ''
+	songs = ''
+	error = ''
 	if request.method == 'POST':
+		#if request.form['songs']:
+		#	return request.form['songs']
+
 		pandora_user = request.form['pandoraUsername']
 		pandora_pass = request.form['pandoraPassword']
 		spotify_user = request.form['spotifyUsername']
 		spotify_pass = request.form['spotifyPassword']
 		email = request.form['email']
 
-		p = Person(s_uname = spotify_user,
-					s_pword = spotify_pass,
-					p_uname = pandora_user,
-					p_pword = pandora_pass,
-					user_email = email,
-					songs = []
-					)
-		p.save()
+		person = {	"s_uname": spotify_user,
+					"s_pword": spotify_pass,
+					"p_uname": pandora_user,
+					"p_pword": pandora_pass,
+					"user_email": email }
+		ppl = db.people
+		ppl.insert(person)
+
 		saved = 'Thanks, we are processing your info and will email you when your playlist is ready!'
-		processQueue.put(p)
-		manageQueue()
-	return render_template('index.html', saved=saved)
-
-
+		flag = call(["ruby", "watir.rb", pandora_user, pandora_pass])
+		songs = get_ruby_songs(pandora_user)
+		format_songs(songs, email)
+		if flag == 0:
+			error = "Failed to login to Pandora."
+		#out = subprocess.Popen(["ruby", "watir.rb", pandora_user, pandora_pass], stdout=subprocess.PIPE)
+		#songs, err = out.communicate()
+		#processQueue.put(p)
+		#manageQueue()
+		sendEmail(email, pandora_user)
+	return render_template('index.html', saved=saved, songs=songs, error=error)
 
 def sendEmail(email, pandora_user):
-	#p = Person.query.filter(Person.user_email==email).first()
-	#songs = []
-	#songsValid = []
-	#songsInvalid = []
-	#for elem in p.songs:
-	#	songInfo = elem.split("~")
-	#	if getUri(songInfo[0],songInfo[1]) == None:
-	#		songsInvalid.append(songInfo[0])
-	#	else:
-	#		songsValid.append(songInfo[0])
+	slist = get_songs_by_user(email)
+	playlists = []
+	songs = []
+	songsValid = []
+	playlistName = []
+	for elem in slist:
+		songInfo = elem.split("~")
+		songs.append(songInfo[0])
+		if songInfo[2] == 1:
+			songsValid.append(1)
+		else:
+			songsValid.append(0)
+		playlistName.append(songInfo[1]) #CHECK INDEX FOR PLAYLIST
+		if not songInfo[1] in playlists: #CHECK INDEX FOR PLAYLIST
+			playlists.append(songInfo[1]) #CHECK INDEX FOR PLAYLIST
+
 	s = sendgrid.Sendgrid('varantz', 'sendPass123', secure=True)
-	message = sendgrid.Message("vzanoyan@gmail.com", "Pandorify!", "", "<b>Your playlist is ready!</b>")
+	#message = sendgrid.Message("notifications@pandorify.us", "Pandorify!", "", ("<b>Your playlist" + plural(playlists) + " ready!</b> <br />" + getBody(["Test PL 1", "Test PL 2"], ["song1","song2","song3","song4" ], [1,1,1,1], ["Test PL 1", "Test PL 2", "Test PL 1", "Test PL 2"])))
+	message = sendgrid.Message("notifications@pandorify.us", "Pandorify!", "", ("<b>Your playlist" + plural(playlists) + " ready!</b> " + getBody(playlists, songs, songsValid, playlistName)))
 	message.add_to(email, pandora_user)
 
 	s.web.send(message)
-
-	
 	return
 
+def plural(playlists):
+	if len(playlists)>1:
+		return "s are "
+	else:
+		return " is "
 
+def getBody(playlists, songs, songsValid, playlistName):
+	toRet = ""
+	for pl in playlists:
+		toRet = toRet + "<p>" + "Songs added from " + pl + ":" + "<br /> "
+		toRet = toRet + "<ol>"
+		for i in range(len(songs)):
+			if songsValid[i] == 1:
+				if playlistName[i] == pl:
+					toRet = toRet + "	" + songs[i] +  "<br />"
+		toRet = toRet + "</ol>"
+		temp =  "<br />"   + "Songs not found on Spotify from " + pl + ":" + "<br />" + "<ol>"
+		temp2 = ""
+		for i in range(len(songs)):
+			if songsValid[i] == 0:
+				if playlistName[i] == pl:
+					temp2 = temp2 + "	" + songs[i] + "<br />"
+		if not temp2 == "":
+			toRet = toRet + temp + temp2 + "</ol>"
+		toRet = toRet + "<br />" + "</p>"
+	return toRet
 
 @app.route('/entries')
 def route_entries():
@@ -92,17 +116,55 @@ def route_entries():
 def about():
 	return "Built at PennApps 2012."
 
+@app.route('/done')
+def about():
+	return ""
+
+def get_ruby_songs(u_name):
+	lst = []
+	for song in db.rubysongs.find():
+		lst.append(song['info'])
+
+	return lst
+
+def format_songs(songs, email):
+	spl = []
+	for song in songs:
+		spl = song.split('~')
+		print spl
+		uri = getUri(spl[0],spl[1])
+		if uri != None:	
+			song = {"title": spl[0],
+					"artist": spl[1],
+					"station": spl[2],
+					"email": email,
+					"uri": uri,
+					"has_uri": 1}
+		else:
+			song = {"title": spl[0],
+					"artist": spl[1],
+					"station": spl[2],
+					"email": email,
+					"uri": "",
+					"has_uri": 0}
+		db.songs.insert(song)
+
+def get_songtable():
+	return db.songs.find()
+
+def get_songs_by_user(email):
+	lst = []
+	for song in db.songs.find({"email": email}):
+		lst.append(song['title'] + "~"  + "~" + song['station'] + "~" + song['has_uri'])
+	return lst
 
 def list_person_entries():
-    entries = Person.query.all()
-    content = '<p>Entries:</p>'
-    for entry in entries:
-        content += '<p>%s</p>' % entry.s_uname
-    return content
+    content = ''
+    ppl = db.people.find()
+    for p in ppl:
+    	content += 'Pandora Username:'+ p['p_uname']
 
-def handle_submit(p_user, p_pass, s_user, s_pass):
-	out = p_user + ', ' + p_pass + ', ' + s_user + ', ' + s_pass
-	return out
+	return content
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
