@@ -109,7 +109,7 @@ static sp_session_config config = {
 };
 
 void list_playlists(sp_session *session) {
-  sp_playlistcontainer *pc = sp_session_playlistcontainer(g_session);
+  sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
   int next_timeout = 0;
   while (!g_container_loaded) 
 	{
