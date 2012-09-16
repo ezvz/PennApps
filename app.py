@@ -155,7 +155,7 @@ def get_songtable():
 def get_songs_by_user(email):
 	lst = []
 	for song in db.songs.find({"email": email}):
-		lst.append(song['title'] + "~"  + "~" + song['station'] + "~" + song['has_uri'])
+		lst.append(song['title'] + "~"  + song['station'] + "~" + song['has_uri'])
 	return lst
 
 def list_person_entries():
