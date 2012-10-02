@@ -5,3 +5,5 @@ pandorify.pem
 *.o
 somethingelsethistime.pem
 *.key
+
+.DS_Store
