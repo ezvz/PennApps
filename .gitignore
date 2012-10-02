@@ -10,3 +10,4 @@ libspotify-*
 tmp/*
 *.txt
 
+appkey.c
