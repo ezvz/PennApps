@@ -3,6 +3,7 @@
 
 #define USER_AGENT "pandorify"
 
+#include <assert.h>
 #include <pthread.h>
 #include <sys/time.h>
 #include <libgen.h>
@@ -13,30 +14,58 @@
 #include <libspotify/api.h>
 #include <strings.h>
 
-sp_session *g_session;
 char filename[256];
 // Instead of mutex's we just busy-wait
+
 int g_track_updated = 0;
-int g_playlist_updated = 0;
+int g_playlist_added = 0;
 int g_logged_in = 0;
+int g_container_loaded = 0;
+int g_playlist_created = 0;
+
+// Playlist callbacks
 
 void tracks_added(sp_playlist *pl, sp_track *const *tracks, int num_tracks, 
 				  int position, void *userdata)
 {
   printf("tracks added\n");
-  track_updated = 1;
-}
-
-void playlist_update_in_progress(sp_playlist *pl, bool done, void *userdata)
-{
-  printf("(playlist updating)");
-  playlist_updated = 1;
+  g_track_updated = 1;
 }
 
 sp_playlist_callbacks playlist_callbacks = {
   .tracks_added = tracks_added,
-  .playlist_update_in_progress = playlist_update_in_progress,
 };
+
+// Playlist container callbacks
+
+static void playlist_added(sp_playlistcontainer *pc, sp_playlist *pl,
+                           int position, void *userdata)
+{
+  printf("playlist added.\n");
+  // Add a playlist callback so we know when the track's been added later
+  sp_playlist_add_callbacks(pl, &pl_callbacks, NULL);
+  g_playlist_created = 1;
+}
+
+static void container_loaded(sp_playlistcontainer *pc, void *userdata)
+{
+  printf("Container loaded.\n");
+  g_container_loaded = 1;
+}
+
+static void playlist_added(sp_playlistcontainer *pc, sp_playlist *pl,
+                           int position, void *userdata)
+{
+  printf("playlist_added callback for %s.\n", sp_playlist_name(pl));
+  g_playlist_added = 1 ? g_container_loaded : 0;
+}
+
+static sp_playlistcontainer_callbacks pc_callbacks = {
+  .playlist_added = &playlist_added,
+  .container_loaded = &container_loaded,
+};
+
+// Session callbacks
 
 static void connection_error(sp_session *session, sp_error error)
 {
@@ -51,6 +80,13 @@ static void logged_in(sp_session *session, sp_error error)
         exit(1);
     }
     printf("Logged in success!\n");
+	
+	// Add callbacks for loading
+	sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
+	sp_playlistcontainer_add_callbacks(pc, &pc_callbacks, NULL);
+
+	// Allow rest of main to run
+	g_logged_in = 1;
 }
 
 static void logged_out(sp_session *session)
@@ -59,10 +95,6 @@ static void logged_out(sp_session *session)
   exit(0);
 }
 
-/**
- * This callback is called for log messages.
- *
- */
 static void log_message(sp_session *session, const char *data)
 {
   fprintf(stderr,"%s",data);
@@ -85,19 +117,30 @@ static sp_session_config config = {
     .cache_location = "tmp",
     .settings_location = "tmp",
     .application_key = g_appkey,
-    .application_key_size = g_appkey_size,
+    .application_key_size = 0,
     .user_agent = USER_AGENT,
     .callbacks = &callbacks,
+	NULL,
 };
 
-void list_playlists() {
-  sp_playlistcontainer *pc = sp_session_playlistcontainer(g_session);
+void list_playlists(sp_session *session) {
+  sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
+  int next_timeout = 0;
+  printf("waiting for container to load.\n");
+  
+  while (!g_container_loaded) 
+	{
+	  sp_session_process_events(session, &next_timeout);
+	  printf("sleeping b/c container not loaded yet.\n");
+	  usleep(next_timeout * 1000);
+	}
+  printf("container successfully loaded.\n");
+  g_container_loaded = 0;
   int i, j, level = 0;
   sp_playlist *pl;
   char name[200];
   int new = 0;
   
-  if (!pc) return;
   printf("%d playlists available\n", sp_playlistcontainer_num_playlists(pc));
 
   for (i = 0; i < sp_playlistcontainer_num_playlists(pc); ++i) {
@@ -113,105 +156,175 @@ void list_playlists() {
       printf("%d. ", i);
       for (j = level; j; --j) printf("\t");
       sp_playlistcontainer_playlist_folder_name(pc, i, name, sizeof(name));
-      printf("Folder: %s with id %llu\n", name,
-	     sp_playlistcontainer_playlist_folder_id(pc, i));
+      printf("Folder: %s with id %zu\n", name,
+	  sp_playlistcontainer_playlist_folder_id(pc, i));
       level++;
       break;
     case SP_PLAYLIST_TYPE_END_FOLDER:
       level--;
       printf("%d. ", i);
       for (j = level; j; --j) printf("\t");
-      printf("End folder with id %llu\n",	sp_playlistcontainer_playlist_folder_id(pc, i));
+      printf("End folder with id %zu\n",	sp_playlistcontainer_playlist_folder_id(pc, i));
       break;
     case SP_PLAYLIST_TYPE_PLACEHOLDER:
       printf("%d. Placeholder", i);
-      placeholders[current_place_index] = i;
-      current_place_index++;
       break;
     }
   }
 }
 
-void pandorify_raw() {
-  printf("executing pandorify_raw.\n");
-  sp_playlistcontainer *pc;
-  while (!pc) pc = sp_session_playlistcontainer(g_session);
-  int last_slot = sp_playlistcontainer_num_playlists(pc);
-  sp_error error;
-      
-  char buff[1024];
-  int make_new_playlist = 0;
-  // This is our playlist in between runs
-  sp_playlist *pl;
-  FILE *fp = fopen(filename, "r");
-
+void omega(sp_session *session, char *filename) {
+  printf("entering omega.\n");
+  sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
   int next_timeout = 0;
+  printf("waiting for container to load.\n");
 
-  //printf("just adding playlist\n");
-  //pl = sp_playlistcontainer_add_new_playlist(pc, "foo");
+  while (!g_container_loaded) 
+	{
+	  sp_session_process_events(session, &next_timeout);
+	  printf("sleeping\n");
+	  usleep(next_timeout * 1000);
+	}
+  printf("container successfully loaded.\n");
+
+  g_container_loaded = 0;
+  int n = 512;
+  char buf[n];
+  int make_new_playlist = 0;
+  sp_playlist *pl = NULL;
+  FILE *fp = fopen(filename, "r");
   
-  // if (!pl) printf("it was null\n");
+  // Go through the file
+  while (fgets(&buf, n, fp))
+	{
+	  printf("Processing line in file.\n");
+	  int len = strnlen(buf, n);
+	  buf[len-1] = '\0';
+	  if (make_new_playlist) {
+		printf("Making new playlist: %s.\n", buf);
+		g_playlist_created = 0;
+		pl = sp_playlistcontainer_add_new_playlist(pc, buf);
 
-  while (fgets(&buff, 1024, fp))
-    {
-	  printf("Cycle round.\n");
-      int len = strnlen(buff, 1024);
-      buff[len-1] = '\0';
-      if (!strncmp(&buff, "---", 3))
+		// Wait for update
+		while (!g_playlist_created) 
+		  {
+			sp_session_process_events(session, &next_timeout);
+			printf("sleeping\n");
+			usleep(next_timeout * 1000);
+		  }
+		if (!pl) printf("Weird, the callback must have fired but pl is null.\n");
+		// Callbacks are added in create callback
+	  }
+	  else if (!strncmp(&buf, "---", 3))
 		{
-		  //delimiter -- new playlist to make
 		  make_new_playlist = 1;
 		  printf("Found playlist delimiter.\n");
 		}
-      else if (make_new_playlist) 
-		{
-		  printf("Make a new playlist called: %s\n", buff);
-		  pl = sp_playlistcontainer_add_new_playlist(pc, buff);
-		  make_new_playlist = 0;
-		  
-		  if (pl)
-			printf("Playlist created\n");
-		  else 
-			printf("Playlist not created\n");
-		  // wait until the playlist is updated
-		  while (!playlist_updated) {
-			sp_session_process_events(g_session, &next_timeout);
-			usleep(next_timeout * 1000);
-		  }
+	  else {
+		// Means we are adding a track
+		printf("Adding track %s to playlist %s.\n", buf, sp_playlist_name(pl));
+		// Create the track object
+		sp_link *track_link = NULL;
+		track_link = sp_link_create_from_string(buf);
+		if (track_link == NULL || sp_link_type(track_link) != SP_LINKTYPE_TRACK) {
+		  printf("%s does not represent a valid link.\n", buf);
+		  continue;
 		}
-      else 
-		{
-		  printf("Make a new song in current playlist called: %s",
-				 buff);
-		  sp_link *track_link = NULL;
-		  track_link = sp_link_create_from_string(buff);
-		  if (track_link == NULL || sp_link_type(track_link) != SP_LINKTYPE_TRACK)
-			{
-			  printf("Not a valid track\n");
-			  continue;
-			}
-		  sp_track *track = sp_link_as_track(track_link);
-		  if (track == NULL) {
-			printf("invalid track is null\n");
-			continue;
-		  }
-		  while ((error = sp_track_error(track)) == SP_ERROR_IS_LOADING) usleep(100);
-		  if (SP_ERROR_OK != error) {
-		    fprintf(stderr, "failed to link track: %s\n",
-		  	    sp_error_message(error));
-		  }
-		  printf("track loaded successfully.\n");
-		  error = sp_playlist_add_tracks(pl, (const sp_track **) &track, 
-										 1, 0, g_session);
-		  if (SP_ERROR_OK != error) {
-			fprintf(stderr, "failed to add tracks: %s\n",
-					sp_error_message(error));
-		  }
-		  pthread_mutex_lock(&notify_mutex);
-		  pthread_cond_wait(&notify_cond, &notify_mutex);
-		  pthread_mutex_unlock(&notify_mutex);
-		  printf("Track added successfully.\n");
+		sp_track *track = sp_link_as_track(track_link);
+		if (track == NULL) {
+		  printf("Weird, we checkd for null already.\n");
+		  continue;
 		}
+		while (!sp_track_is_loaded(track)) {
+		  sp_session_process_events(session, &next_timeout);
+		  printf("sleeping.\n");
+		  usleep(next_timeout * 1000);
+		}
+		printf("Track is loaded.\n");
+		// Add to the playlist 
+		g_track_added = 0;
+		sp_error error = sp_playlist_add_tracks(pl, &track, 1, 0, session);
+		if (SP_ERROR_OK != error) {
+		  fprintf(stderr, "failed to add track: %s\n",
+				  sp_error_message(error));
+		  continue; // let's try and add the rest anyway
+		}
+		while (!g_track_added) {
+		  sp_session_process_events(session, &next_timeout);
+		  printf("sleeping.\n");
+		  usleep(next_timeout * 1000);
+		}
+		printf("Track is added.\n");
+		g_track_added = 0;
+	  }
+	}
+}
+
+void pandorify(sp_session *session, char *filename) {
+  printf("Pandorify'ing.\n");
+  sp_playlistcontainer *pc = sp_session_playlistcontainer(session);
+  int next_timeout = 0;
+  while (!g_container_loaded) 
+	{
+	  sp_session_process_events(session, &next_timeout);
+	  printf("sleeping b/c container not loaded yet.\n");
+	  usleep(next_timeout * 1000);
+	}
+  printf("%d playlists available.\n", sp_playlistcontainer_num_playlists(pc));
+  
+  // The real shit
+  char buff[512];
+  char *buff_const;
+  FILE *fp = fopen(filename, "r");
+  int make_new_playlist = 0;
+  sp_playlist *pl = NULL;
+
+  while (buff_const = fgets(&buff, 512, fp))
+	{
+	  if (!buff_const) { 
+		printf("Error reading file.\n");
+		break; 
+	  }
+	  assert (buff_const == &buff);
+
+	  int len = strnlen(buff_const, 512);
+	  buff[len-1] = '\0';
+
+	  if (!strncmp(buff_const, "---", 3)) {
+		make_new_playlist = 1;
+	  }
+	  else if (make_new_playlist) {
+		make_new_playlist = 0;
+		printf("Will make a new playlist here called %s.\n", buff_const);
+		pl = sp_playlistcontainer_add_new_playlist(pc, buff_const);
+
+		while (!g_playlist_added) {
+		  sp_session_process_events(session, &next_timeout);
+		  printf("sleeping b/c playlist not ready.\n");
+		  usleep(next_timeout * 1000);
+		}
+		// We are done waiting
+		g_playlist_added = 0;
+	  }
+	  else {
+		printf("Will make new track %s to playlist %s.\n", buff_const, sp_playlist_name(pl));
+		sp_link *link = sp_link_create_from_string(buff_const);
+		sp_track *track = sp_link_as_track(link);
+		int next_timeout2 = 0;
+		sp_error error;
+		while (error = sp_track_error(track) == SP_ERROR_IS_LOADING) {
+		  sp_session_process_events(session, &next_timeout2);
+		  printf("sleeping b/c playlist not ready.\n");
+		  usleep(next_timeout * 1000);
+		}
+		if (SP_ERROR_OK != error) {
+		  fprintf(stderr, "failed to load correct tracks: %s\n",
+				  sp_error_message(error));
+		}
+		else {
+		  sp_playlist_add_tracks(pl, &track, 1, 0, session);
+		}
+	  }
 	}
 }
 
@@ -219,7 +332,13 @@ int main(int argc, char *argv[])
 {
     sp_error error;
     sp_session *session;
-    
+	if (argc < 4) {
+	  printf("Not enough arguments.\n");
+	  exit(1);
+	}
+	char *username = argv[1];
+	char *password = argv[2];
+	char *filename = argv[3];
     config.application_key_size = g_appkey_size;
     error = sp_session_create(&config, &session);
     if (error != SP_ERROR_OK) {
@@ -227,12 +346,19 @@ int main(int argc, char *argv[])
         return 1;
     }
     int next_timeout = 0;
-    g_logged_in = 0;
+	
     sp_session_login(session, username, password, 0, NULL);
     while (!g_logged_in) {
         sp_session_process_events(session, &next_timeout);
+		printf("sleeping b/c not logged in yet.\n");
         usleep(next_timeout * 1000);
     }
-
+	// list_playlists(session);
+	pandorify(session, filename);
+	error = sp_session_logout(session);
+	if (error != SP_ERROR_OK) {
+        fprintf(stderr, "Error: unable to logout spotify session: %s\n", sp_error_message(error));
+        return 1;
+    }
     return 0;
 }

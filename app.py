@@ -39,14 +39,14 @@ def convert(person):
         print >>fp, station
         for song in songs.find({"station": station, "has_uri": 1}):
             print >>fp, song['uri']
-    refresh_tables()
+    fp.close()
     return filename
 
 def run_spotify_tool(person, filename):
 	spotify_cmd = "./pandorify "+person['s_uname']+" "+ person['s_pword']+" "+filename
 	process = None
 	def target():
-		logging.info("Spotify process started")
+		logging.info("Spotify process started with cmd: "+spotify_cmd)
 		process = subprocess.Popen(spotify_cmd, shell=True, stderr=subprocess.PIPE)
 		(stdout, stderr) = process.communicate()
 		logging.info("Spotify process finished")
@@ -55,7 +55,7 @@ def run_spotify_tool(person, filename):
 	thread = threading.Thread(target=target)
 	thread.start()
 	
-	thread.join(10000)
+	thread.join(20000)
 	if thread.is_alive():
 		logging.info("Spotify hung, restarting")
 		process.terminate()
@@ -84,15 +84,18 @@ class ThreadCrawler(threading.Thread):
 				self.queue.task_done()
 				return
 			songs = get_ruby_songs(pandora_user)
-			format_songs(songs, email)
+			format_songs(songs, pandora_user)
 			logging.debug("Calling spotify tools")
 			filename = convert(pandora_user)
-			while not run_spotify_tool(person, filename):
-				pass
-			self.queue.task_done()
+			if person['s_uname'] and person['s_pword']:
+				while not run_spotify_tool(person, filename):
+					pass
 			logging.info("Finished processing person")
-			sendEmail(email, person['user_email'])
-		
+			#refresh_tables()
+			sendEmail(email, person['p_uname'])
+			self.queue.task_done()
+			
+
 t = ThreadCrawler(queue)
 t.setDaemon(True)
 t.start()
@@ -127,7 +130,7 @@ def route_root():
 	return render_template('index.html', saved=saved)
 
 def sendEmail(email, pandora_user):
-	slist = get_songs_by_user(email)
+	slist = get_songs_by_user(pandora_user)
 	playlists = []
 	songs = []
 	songsValid = []
@@ -137,7 +140,7 @@ def sendEmail(email, pandora_user):
 		songInfo = elem.split("~")
 		songs.append(songInfo[0])
 		uri.append(songInfo[3])
-		if songInfo[2] == 1:
+		if int(songInfo[2]) == 1:
 			songsValid.append(1)
 		else:
 			songsValid.append(0)
@@ -174,7 +177,7 @@ def getBody(playlists, songs, songsValid, playlistName, uri):
 		for i in range(len(songs)):
 			if songsValid[i] == 0:
 				if playlistName[i] == pl:
-					temp2 = temp2 + "	" + songs[i] + "<br />"
+					temp2 = temp2 + "	" + songs[i] + " " + uri[i] + "<br />"
 		if not temp2 == "":
 			toRet = toRet + temp + temp2 + "</ol>"
 		toRet = toRet + "<br />" + "</p>"
@@ -203,9 +206,9 @@ def format_songs(songs, email):
 	spl = []
 	for song in songs:
 		spl = song.split('~')
-		if(spl[3]==email):
-			print spl
-			uri = getUri(spl[0],spl[1])
+		if(str(spl[3])==email):
+			print str(spl[0])
+			uri = str(getUri(str(spl[0]),str(spl[1])))
 			if uri != None:	
 				song = {"title": spl[0],
 						"artist": spl[1],
@@ -227,8 +230,10 @@ def get_songtable():
 
 def get_songs_by_user(email):
 	lst = []
-	for song in db.songs.find({"email": email}):
-		lst.append(str(song['title']) + "~"  + str(song['station']) + "~" + str(song['has_uri']) + "~" + str(song['uri']))
+	for song in db.songs.find():
+		if(str(song['email'])==email):
+			lst.append(str(song['title']) + "~"  + str(song['station']) + "~" + str(song['has_uri']) + "~" + str(song['uri']))
+	print len(lst)
 	return lst
 
 def list_person_entries():
