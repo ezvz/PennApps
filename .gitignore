@@ -4,13 +4,9 @@ pandorify.pem
 [#]*[#]
 *.o
 somethingelsethistime.pem
-<<<<<<< HEAD
 *.key
-
 .DS_Store
-=======
 libspotify-*
 tmp/*
 *.txt
 
->>>>>>> e37f5096d4cf68d792da5328c0a6fc04c84908f4
