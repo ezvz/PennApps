@@ -4,3 +4,4 @@ pandorify.pem
 [#]*[#]
 *.o
 somethingelsethistime.pem
+*.key
